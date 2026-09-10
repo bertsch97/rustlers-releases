@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__APP_BUILD=parseInt("122",10)||0;</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:#1c7a36;color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:#1c7a36;border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var MIN=parseInt(localStorage.getItem("rustlers_zoom_min"),10);if(!MIN||MIN<800||MIN>1600)MIN=1180;var w=window.innerWidth||document.documentElement.clientWidth;var z=(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__APP_BUILD=parseInt("123",10)||0;</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:#1c7a36;color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:#1c7a36;border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var MIN=parseInt(localStorage.getItem("rustlers_zoom_min"),10);if(!MIN||MIN<800||MIN>1600)MIN=1180;var w=window.innerWidth||document.documentElement.clientWidth;var z=(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
 function E(t,c,x){var e=document.createElement(t);if(c)e.style.cssText=c;if(x!=null)e.textContent=x;return e;}
 function panel(){if(document.getElementById('__bk_ov'))return;
 var ov=E('div','position:fixed;inset:0;z-index:2147483646;background:rgba(6,9,7,.92);display:flex;align-items:center;justify-content:center;padding:20px;');ov.id='__bk_ov';
@@ -624,6 +624,87 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
     return out;
   }
 
+
+  /*
+   * allPhraseOccurrences(text, entries)
+   * EVERY occurrence of every event, in order -- the same shape
+   * allPhraseMatches returns, minus its one-per-key collapse.
+   *
+   * allPhraseMatches answers "which events are in this utterance";
+   * this answers "how many times did each happen". A rally is the
+   * case that needs the difference: "dig by Lang, hit by Vogel, dig by
+   * Doyle, kill by Vogel" is four stats, and bucketing by key reports
+   * three -- one dig, not two.
+   *
+   * Matching rules are deliberately identical to allPhraseMatches so the
+   * two cannot drift: prefix match for single words, bounded fuzzy
+   * fallback unless noFuzzy, exact word-boundary for phrases. The only
+   * differences are that a phrase is scanned for repeatedly rather than
+   * once, and overlaps are resolved by keeping the more specific phrase
+   * -- so "dug out" does not also report the bare "dig" sitting inside
+   * it, and two separate digs still report twice.
+   */
+  function allPhraseOccurrences(text, entries) {
+    var normRaw = normalize(text);
+    if (!normRaw) return [];
+    var norm = " " + normRaw + " ";
+    var words = normRaw.split(" ");
+
+    var offsets = [];
+    var run = 0;
+    for (var w = 0; w < words.length; w++) { offsets.push(run); run += words[w].length + 1; }
+
+    var hits = [];
+    for (var i = 0; i < entries.length; i++) {
+      var entry = entries[i];
+      var phrases = entry.phrases || [];
+      for (var j = 0; j < phrases.length; j++) {
+        var p = normalize(phrases[j]);
+        if (!p) continue;
+        var specificity = p.split(" ").length;
+        if (p.indexOf(" ") === -1) {
+          for (var k = 0; k < words.length; k++) {
+            if (words[k].indexOf(p) === 0) {
+              hits.push({ entry: entry, phrase: phrases[j], specificity: specificity,
+                          at: offsets[k], end: offsets[k] + words[k].length });
+            } else if (!entry.noFuzzy && words[k].length >= 3) {
+              var allowed = editDistanceAllowed(p.length);
+              if (allowed > 0 && levenshtein(p, words[k]) <= allowed) {
+                hits.push({ entry: entry, phrase: phrases[j], specificity: specificity,
+                            at: offsets[k], end: offsets[k] + words[k].length });
+              }
+            }
+          }
+        } else {
+          var from = 0, idx;
+          while ((idx = norm.indexOf(" " + p + " ", from)) !== -1) {
+            hits.push({ entry: entry, phrase: phrases[j], specificity: specificity,
+                        at: idx, end: idx + p.length });
+            from = idx + 1;
+          }
+        }
+      }
+    }
+
+    // Overlapping hits describe the same words. Keep the most specific
+    // one -- "digs it up" over the "dig" inside it -- so a single spoken
+    // event is never reported twice under two phrasings.
+    hits.sort(function (a, b) {
+      if (a.at !== b.at) return a.at - b.at;
+      return b.specificity - a.specificity;
+    });
+    var out = [];
+    for (var h = 0; h < hits.length; h++) {
+      var clash = false;
+      for (var o = 0; o < out.length; o++) {
+        if (hits[h].at < out[o].end && out[o].at < hits[h].end) { clash = true; break; }
+      }
+      if (!clash) out.push(hits[h]);
+    }
+    out.sort(function (a, b) { return a.at - b.at; });
+    return out;
+  }
+
   NS.normalize = normalize;
   NS.levenshtein = levenshtein;
   NS.similarity = similarity;
@@ -634,6 +715,7 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
   NS.matchPlayerInText = matchPlayerInText;
   NS.bestPhraseMatch = bestPhraseMatch;
   NS.allPhraseMatches = allPhraseMatches;
+  NS.allPhraseOccurrences = allPhraseOccurrences;
 
   if (typeof module !== 'undefined' && module.exports) module.exports = NS;
 })();
@@ -1499,10 +1581,30 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
   // Which event, by index into `hits`, does this token belong to?
   // Inside an event's own phrase, that event. Otherwise the nearest by
   // gap distance, earlier event winning a tie.
-  function ownerOf(tok, hits) {
+  var LINK_WORDS = { by: 1, "by the": 1, for: 1, "for the": 1, from: 1,
+                     "from the": 1, to: 1, "to the": 1, off: 1, "off of": 1,
+                     on: 1, "on the": 1 };
+
+  function ownerOf(tok, hits, norm) {
     var i;
     for (i = 0; i < hits.length; i++) {
       if (tok.at >= hits[i].at && tok.end <= hits[i].end) return i;
+    }
+    // Both word orders are real -- "dig by Rausch" and "Rausch digs it" --
+    // and in packed rally speech distance cannot separate them: the linking
+    // word leaves a name 5 characters past its own verb and 1 short of the
+    // next one. The link itself is the signal. A name reached from the
+    // preceding event across nothing but "by" / "for" / "from" belongs to
+    // that event whatever the arithmetic says; anything else ("and Rausch
+    // digs it") falls through to plain nearest, which reads that order
+    // correctly on its own.
+    if (norm) {
+      var prev = -1;
+      for (i = 0; i < hits.length; i++) if (tok.at >= hits[i].end) prev = i;
+      if (prev >= 0) {
+        var gap = norm.slice(hits[prev].end, tok.at).trim();
+        if (gap === "" || LINK_WORDS[gap] === 1) return prev;
+      }
     }
     var best = 0, bestD = Infinity;
     for (i = 0; i < hits.length; i++) {
@@ -1522,56 +1624,116 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
     }
     var buckets = [];
     for (i = 0; i < hits.length; i++) buckets.push([]);
-    for (i = 0; i < toks.length; i++) buckets[ownerOf(toks[i], hits)].push(toks[i].w);
+    for (i = 0; i < toks.length; i++) buckets[ownerOf(toks[i], hits, norm)].push(toks[i].w);
     return buckets.map(function (b) { return b.join(' '); });
   }
 
+  // A rally is longer than a sentence about one play. The old ceiling of
+  // three was sized for "dig and a kill"; a real point runs dig, hit, dig,
+  // hit, dig, set, kill and needs room for all of it. Still bounded, so a
+  // runaway transcript cannot flood the queue.
+  var MAX_STATS = 8;
+
+  function refId(ref) { return ref ? (ref.side + ":" + ref.id) : null; }
+
+  // Did anything else get recorded between these two mentions? That is
+  // what separates a rally coming back round from a phrase repeated for
+  // effect.
+  function movedOn(emitted, since, until) {
+    for (var e = 0; e < emitted.length; e++) {
+      if (emitted[e] > since && emitted[e] < until) return true;
+    }
+    return false;
+  }
+
+  /*
+   * The same event key twice in one breath is ambiguous: it is either the
+   * event RESTATED ("what a kill ... what a kill") or the event happening
+   * TWICE ("dig by Lang ... dig by Doyle"). Nothing in the words settles
+   * it -- but the player does. Two digs by two different players are two
+   * digs; the same player, or a nameless echo of one already recorded, is
+   * one. Where it stays ambiguous the call is to under-count, because a
+   * phantom stat is the expensive direction: it is harder to notice than
+   * a missing one and it corrupts a percentage as well as a total.
+   */
   function parseTranscriptMulti(ctx, transcript) {
     var primary = parseTranscript(ctx, transcript);
     if (!primary) return [];
     if (!ctx || !MULTI_SPORTS[ctx.baseSport]) return [primary];
 
     var events = NS.keywords && NS.keywords[ctx.baseSport];
-    if (!events || !NS.allPhraseMatches) return [primary];
+    if (!events || !NS.allPhraseOccurrences) return [primary];
 
-    var hits = NS.allPhraseMatches(transcript, events);
+    var hits = NS.allPhraseOccurrences(transcript, events);
     if (hits.length < 2) return [primary];
 
     var norm = NS.normalize(transcript);
     var segs = segmentsFor(norm, hits);
-    var out = [primary];
-    var seen = {};
-    seen[primary.actKey] = 1;
 
-    // The cap gates how many EXTRA suggestions are added, not the loop
-    // itself: the primary's own segment may sit last, and skipping it
-    // would leave the headline stat unnamed when its own words name it.
+    var out = [primary];
+    // Where each stat was last taken, by event+player, as an index into
+    // `hits`. The headline came from the whole text, so it sits before
+    // every occurrence at -1.
+    var lastAt = {};
+    var lastKeyAt = {};
+    var emitted = [-1];
+    lastAt[primary.actKey + "|" + refId(primary.playerRef)] = -1;
+
     for (var i = 0; i < hits.length; i++) {
-      var key = hits[i].entry.key;
-      var seg = (segs[i] || '').trim();
+      var seg = (segs[i] || "").trim();
       if (!seg) continue;
       var r = parseTranscript(ctx, seg);
-      // The segment must actually be about the event it was cut for,
-      // or a fragment could re-report the primary under a different
-      // slice of words.
-      if (!r || r.actKey !== key) continue;
+      // The slice must be about the event it was cut for, or a fragment
+      // could re-report something else under a different set of words.
+      if (!r || r.actKey !== hits[i].entry.key) continue;
 
-      if (key === primary.actKey) {
-        // Same event as the headline — only ever fill in a missing name.
-        if (primary.needsPlayer && r.playerRef) {
-          primary.playerRef = r.playerRef;
-          primary.needsPlayer = false;
-          primary.confidence = Math.min(primary.confidence, r.confidence);
-        }
+      var key = r.actKey;
+      var id = refId(r.playerRef);
+      var tag = key + "|" + id;
+
+      // The headline could not name a player but this slice can: fill it
+      // in rather than adding a second copy of the same stat.
+      if (key === primary.actKey && primary.needsPlayer && r.playerRef &&
+          !Object.prototype.hasOwnProperty.call(lastAt, tag)) {
+        primary.playerRef = r.playerRef;
+        primary.needsPlayer = false;
+        primary.confidence = Math.min(primary.confidence, r.confidence);
+        delete lastAt[key + "|null"];
+        lastAt[tag] = i;
+        lastKeyAt[key] = i;
         continue;
       }
-      if (seen[key] || out.length >= 3) continue;
-      seen[key] = 1;
+
+      /*
+       * The same event by the same player, twice in one breath, is either
+       * a restatement ("what a kill ... what a kill") or the rally coming
+       * back round ("dig by Doyle ... hit ... dig ... hit ... dig by
+       * Doyle"). What separates them is whether anything else happened in
+       * between: a libero really does dig twice in a long rally, but not
+       * twice in a row with nothing between. With nothing between it is
+       * dropped, because a phantom stat costs more than a missing one.
+       */
+      if (Object.prototype.hasOwnProperty.call(lastAt, tag)) {
+        // The headline came from the whole transcript, so one of these
+        // slices IS it. Claim that slice rather than counting it twice.
+        if (lastAt[tag] === -1) { lastAt[tag] = i; lastKeyAt[key] = i; continue; }
+        if (!movedOn(emitted, lastAt[tag], i)) continue;
+      } else if (id === null &&
+                 Object.prototype.hasOwnProperty.call(lastKeyAt, key)) {
+        // An unnamed mention of something already recorded is an echo of
+        // it ("a dig by Rausch ... what a dig"), unless the rally moved on
+        // in between, in which case it is a real touch nobody named.
+        if (!movedOn(emitted, lastKeyAt[key], i)) continue;
+      }
+
+      if (out.length >= MAX_STATS) break;
+      lastAt[tag] = i;
+      lastKeyAt[key] = i;
+      emitted.push(i);
       out.push(r);
     }
     return out;
   }
-
   function playerLabel(ctx, ref) {
     if (!ref) return '';
     var entry = ctx.roster.filter(function (r) {
@@ -1943,7 +2105,10 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
     var transcriptBuffer = []; // last 3 raw chunks, oldest first
     var lastNeeds = null;      // a suggestion still waiting for a name
     var pending = [];          // extra stats from one utterance, awaiting their turn
-    var QUEUE_TTL_MS = 20000;  // an unoffered extra stat is stale after this
+    // A rally can now queue up to eight stats and each one is a tap. Twenty
+    // seconds was sized for a two-stat utterance and would have thrown away
+    // the tail of a long point while it was still being worked through.
+    var QUEUE_TTL_MS = 60000;  // an unoffered extra stat is stale after this
 
     function pushBridge(transcript, suggestion, expire) {
       try {
