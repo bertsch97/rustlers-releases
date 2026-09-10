@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__APP_BUILD=parseInt("123",10)||0;</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:#1c7a36;color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:#1c7a36;border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var MIN=parseInt(localStorage.getItem("rustlers_zoom_min"),10);if(!MIN||MIN<800||MIN>1600)MIN=1180;var w=window.innerWidth||document.documentElement.clientWidth;var z=(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__APP_BUILD=parseInt("124",10)||0;</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:#1c7a36;color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:#1c7a36;border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var MIN=parseInt(localStorage.getItem("rustlers_zoom_min"),10);if(!MIN||MIN<800||MIN>1600)MIN=1180;var w=window.innerWidth||document.documentElement.clientWidth;var z=(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
 function E(t,c,x){var e=document.createElement(t);if(c)e.style.cssText=c;if(x!=null)e.textContent=x;return e;}
 function panel(){if(document.getElementById('__bk_ov'))return;
 var ov=E('div','position:fixed;inset:0;z-index:2147483646;background:rgba(6,9,7,.92);display:flex;align-items:center;justify-content:center;padding:20px;');ov.id='__bk_ov';
@@ -778,12 +778,33 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
   NS.keywords.volleyball = [
     { key: 'kill', label: 'Kill', noFuzzy: true, phrases: ['kills it', 'puts it away', 'kill'] },
     { key: 'asst', label: 'Assist', phrases: ['assist', 'sets it up', 'nice set'] },
-    // A swing that gets dug up. Longest-phrase-match means every attack-error
-    // phrase ('hitting error', 'hit into the net', 'hits it out') still wins
-    // over the bare word, so this only catches a hit nobody called an error.
-    { key: 'att', label: 'Attack Att', phrases: ['attack attempt', 'swings at it', 'swing', 'hit'] },
+    /*
+     * A swing whose outcome nobody stated. Longest-phrase-match means every
+     * attack-error phrase ('hitting error', 'hit into the net', 'hits it
+     * out', 'into the net') still wins over any bare word here, so an error
+     * is never demoted to a plain attempt.
+     *
+     * noFuzzy, for the same reason 'kill' is: these words are short and sit
+     * one edit from ordinary speech. "dump" is one from "jump" ("jump
+     * serve"), "tool" one from "took", "wipe" one from "wide", "dink" one
+     * from "sink" -- every one of which would book a phantom swing, and a
+     * phantom swing corrupts Hitting % as well as the total. Exact and
+     * prefix matching still catch every inflection that matters (spikes,
+     * spiked, tipped, dumps, tooled), which is most of what fuzzy was
+     * buying here anyway.
+     *
+     * "line" and "cut" and "cross" stay inside phrases: bare "line" would
+     * prefix-match "lineup" and "cut" turns up in ordinary talk.
+     */
+    { key: 'att', label: 'Attack Att', noFuzzy: true, phrases: [
+      'back row attack', 'setter dump', 'cross court', 'roll shot',
+      'line shot', 'cut shot', 'down ball', 'off the block',
+      'tools the block', 'tooled the block', 'uses the block',
+      'attack attempt', 'swings at it',
+      'spike', 'tip', 'dink', 'dump', 'tool', 'wipe', 'swipe', 'pipe',
+      'roll', 'swing', 'hit'] },
     { key: 'ace', label: 'Ace', phrases: ['ace serve', 'service ace', 'another race', 'race for', 'service air', 'serving air', 'serving aids', 'ace'] },
-    { key: 'dig', label: 'Dig', phrases: ['great dig', 'digs it up', 'dug out', 'dugout', 'dig'] },
+    { key: 'dig', label: 'Dig', phrases: ['great dig', 'digs it up', 'dug out', 'dugout', 'dig', 'dug'] },
     { key: 'bs', label: 'Block Solo', phrases: ['solo block', 'sole block', 'block solo', 'stuff block', 'blocked by', 'the block', 'blocks it', 'block'] },
     { key: 'ba', label: 'Block Assist', phrases: ['assisted block', 'block assist'] },
     { key: 'aerr', label: 'Attack Err', phrases: ['attack error', 'hitting error', 'hitting air', 'hits it out', 'hit into the net', 'into the net', 'out of bounds', 'too strong', 'error'] },
@@ -1677,6 +1698,7 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
     var lastAt = {};
     var lastKeyAt = {};
     var emitted = [-1];
+    var outAt = [-1];   // where each entry of `out` was found, aligned with it
     lastAt[primary.actKey + "|" + refId(primary.playerRef)] = -1;
 
     for (var i = 0; i < hits.length; i++) {
@@ -1701,6 +1723,8 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
         delete lastAt[key + "|null"];
         lastAt[tag] = i;
         lastKeyAt[key] = i;
+        outAt[0] = i;
+        emitted[0] = i;
         continue;
       }
 
@@ -1716,7 +1740,12 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
       if (Object.prototype.hasOwnProperty.call(lastAt, tag)) {
         // The headline came from the whole transcript, so one of these
         // slices IS it. Claim that slice rather than counting it twice.
-        if (lastAt[tag] === -1) { lastAt[tag] = i; lastKeyAt[key] = i; continue; }
+        if (lastAt[tag] === -1) {
+          // the headline came from the whole transcript; this is its slice
+          lastAt[tag] = i; lastKeyAt[key] = i; outAt[0] = i;
+          emitted[0] = i;
+          continue;
+        }
         if (!movedOn(emitted, lastAt[tag], i)) continue;
       } else if (id === null &&
                  Object.prototype.hasOwnProperty.call(lastKeyAt, key)) {
@@ -1730,7 +1759,39 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
       lastAt[tag] = i;
       lastKeyAt[key] = i;
       emitted.push(i);
+      outAt.push(i);
       out.push(r);
+    }
+    /*
+     * An attempt sitting next to its own outcome is one swing described
+     * twice -- "big spike and the kill by Vogel". Kill and Attack Err
+     * already count the swing, so the bare attempt would book a second
+     * one and quietly halve that player's hitting percentage. Dropped
+     * only when nothing else was recorded in between (otherwise the
+     * rally moved on and they really are two swings) and only when the
+     * attempt does not name someone else.
+     */
+    for (var a = out.length - 1; a >= 0; a--) {
+      if (out[a].actKey !== "att") continue;
+      var aid = refId(out[a].playerRef);
+      for (var b = 0; b < out.length; b++) {
+        if (b === a) continue;
+        if (out[b].actKey !== "kill" && out[b].actKey !== "aerr") continue;
+        var bid = refId(out[b].playerRef);
+        if (aid !== null && bid !== null && aid !== bid) continue;
+        var lo = Math.min(outAt[a], outAt[b]), hi = Math.max(outAt[a], outAt[b]);
+        if (movedOn(emitted, lo, hi)) continue;
+        // The attempt often carries the name and the outcome does not
+        // ("back row attack by Lang ... kill"). Keep the name before
+        // dropping the attempt, or the point is credited to nobody.
+        if (out[b].needsPlayer && out[a].playerRef) {
+          out[b].playerRef = out[a].playerRef;
+          out[b].needsPlayer = false;
+          out[b].confidence = Math.min(out[b].confidence, out[a].confidence);
+        }
+        out.splice(a, 1); outAt.splice(a, 1);
+        break;
+      }
     }
     return out;
   }
