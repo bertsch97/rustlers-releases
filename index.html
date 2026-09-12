@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__APP_BUILD=parseInt("127",10)||0;</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:#1c7a36;color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:#1c7a36;border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var MIN=parseInt(localStorage.getItem("rustlers_zoom_min"),10);if(!MIN||MIN<800||MIN>1600)MIN=1180;var w=window.innerWidth||document.documentElement.clientWidth;var z=(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__APP_BUILD=parseInt("128",10)||0;</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:#1c7a36;color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:#1c7a36;border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var MIN=parseInt(localStorage.getItem("rustlers_zoom_min"),10);if(!MIN||MIN<800||MIN>1600)MIN=1180;var w=window.innerWidth||document.documentElement.clientWidth;var z=(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
 function E(t,c,x){var e=document.createElement(t);if(c)e.style.cssText=c;if(x!=null)e.textContent=x;return e;}
 function panel(){if(document.getElementById('__bk_ov'))return;
 var ov=E('div','position:fixed;inset:0;z-index:2147483646;background:rgba(6,9,7,.92);display:flex;align-items:center;justify-content:center;padding:20px;');ov.id='__bk_ov';
@@ -2665,6 +2665,45 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
 
   function base() { return (cfg.host || HOST).replace(/\/+$/, '') + '/e/'; }
 
+  function homeRoster() {
+    var s = load(KEY, null);
+    if (!s || !s.seasons || !s.sport) return [];
+    return (s.seasons[s.sport] || {}).roster || [];
+  }
+
+  // the jersey number behind every HOME player id a play refers to
+  function pmapFor(play) {
+    var byId = {}, map = {};
+    homeRoster().forEach(function (p) { byId[p.id] = p; });
+    var u = play.undo || {};
+    var add = function (pid, team) {
+      if (pid == null || team === 'away') return;
+      var p = byId[pid];
+      if (p && p.num != null) map[pid] = String(p.num);
+    };
+    add(u.pid, u.team);
+    (u.effs || []).forEach(function (e) { if (e) add(e.pid, e.team || u.team); });
+    return map;
+  }
+
+  // rewrite a received play's home ids into THIS device's roster ids
+  function localise(play, pmap) {
+    if (!play || !pmap) return play;
+    var byNum = {};
+    homeRoster().forEach(function (p) { byNum[String(p.num)] = p.id; });
+    var u = play.undo || {};
+    var fix = function (pid, team) {
+      if (pid == null || team === 'away') return pid;
+      var num = pmap[pid];
+      if (num == null) return pid;
+      return byNum[num] != null ? byNum[num] : pid;   // unknown jersey: leave it
+    };
+    u.pid = fix(u.pid, u.team);
+    (u.effs || []).forEach(function (e) { if (e) e.pid = fix(e.pid, e.team || u.team); });
+    return play;
+  }
+
+
   function post(body) {
     return fetch(base() + cfg.code, { method: 'POST', body: JSON.stringify(body) })
       .then(function (r) { return r.ok; });
@@ -2693,8 +2732,8 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
 
     (g.plays || []).forEach(function (p) {
       if (!p || !p.id) return;
-      if (!cfg.sent[p.id]) { out.push({ t: 'play', gid: g.id, dev: cfg.dev, play: p }); return; }
-      if (wasUndone[p.id]) out.push({ t: 'play', gid: g.id, dev: cfg.dev, play: p }); // redone here
+      if (!cfg.sent[p.id]) { out.push({ t: 'play', gid: g.id, dev: cfg.dev, play: p, pmap: pmapFor(p) }); return; }
+      if (wasUndone[p.id]) out.push({ t: 'play', gid: g.id, dev: cfg.dev, play: p, pmap: pmapFor(p) }); // redone here
     });
     Object.keys(live).forEach(function (id) {
       if (!now[id] && undoneNow[id]) out.push({ t: 'undo', gid: g.id, dev: cfg.dev, id: id });
@@ -2718,6 +2757,7 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
     // silently discarded every event for a whole game.
     if (!cfg.gid) return false;
     ev.gid = cfg.gid;
+    if (ev.t === 'play' && ev.play) localise(ev.play, ev.pmap);
     if (ev.t === 'play' && ev.play && ev.play.id) cfg.sent[ev.play.id] = 1;
     save(CFG, cfg);
     el.setAttribute('data-json', JSON.stringify(ev));
