@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>:root{--brand:#2fae4e;--brand-deep:#1c7a36;--brand-line:#2c4a36;--brand-fill:#17241b;--brand-rgb:47,174,78;--brand-deep-rgb:28,122,54;}</style><script>(function(){var D={brand:"#2fae4e",deep:"#1c7a36",line:"#2c4a36",fill:"#17241b"};function toHsl(h){h=String(h||"").trim();if(!/^#[0-9a-fA-F]{6}$/.test(h))return null;var r=parseInt(h.slice(1,3),16)/255,g=parseInt(h.slice(3,5),16)/255,b=parseInt(h.slice(5,7),16)/255;var mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=(mx+mn)/2,s=0,H=0;if(mx!==mn){var d=mx-mn;s=l>0.5?d/(2-mx-mn):d/(mx+mn);H=mx===r?((g-b)/d+(g<b?6:0)):mx===g?((b-r)/d+2):((r-g)/d+4);H*=60;}return [H,s*100,l*100];}function toHex(h,s,l){h=((h%360)+360)%360;s=Math.max(0,Math.min(100,s))/100;l=Math.max(0,Math.min(100,l))/100;var c=(1-Math.abs(2*l-1))*s,x=c*(1-Math.abs((h/60)%2-1)),m=l-c/2,r,g,b;if(h<60){r=c;g=x;b=0;}else if(h<120){r=x;g=c;b=0;}else if(h<180){r=0;g=c;b=x;}else if(h<240){r=0;g=x;b=c;}else if(h<300){r=x;g=0;b=c;}else{r=c;g=0;b=x;}var q=function(v){return Math.round((v+m)*255).toString(16).padStart(2,"0");};return "#"+q(r)+q(g)+q(b);}window.__brandFrom=function(hex){var a=toHsl(hex);if(!a)return null;var H=a[0],S=a[1],L=a[2];var aL=Math.max(38,Math.min(72,L));var dS=(S<=4)?S:Math.min(100,S+6);return {brand:toHex(H,S,aL),deep:toHex(H,dS,Math.max(22,Math.min(45,aL*0.67))),line:toHex(H,Math.min(25,S),23),fill:toHex(H,Math.min(22,S),12)};};function rgbTriplet(h){if(!/^#[0-9a-fA-F]{6}$/.test(String(h||"")))return null;return parseInt(h.slice(1,3),16)+","+parseInt(h.slice(3,5),16)+","+parseInt(h.slice(5,7),16);}window.__applyBrand=function(b){var r=document.documentElement,v=b||D;try{r.style.setProperty("--brand",v.brand||D.brand);r.style.setProperty("--brand-deep",v.deep||D.deep);r.style.setProperty("--brand-line",v.line||D.line);r.style.setProperty("--brand-fill",v.fill||D.fill);r.style.setProperty("--brand-rgb",rgbTriplet(v.brand||D.brand)||"47,174,78");r.style.setProperty("--brand-deep-rgb",rgbTriplet(v.deep||D.deep)||"28,122,54");}catch(e){}};try{var s=JSON.parse(localStorage.getItem("rustlers_v2")||"null");window.__applyBrand(s&&s.identity&&s.identity.brand);}catch(e){}})();</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__APP_BUILD=parseInt("146",10)||0;</script><script>(function(){var MAX=192;window.__logoFrom=function(file,cb){try{if(!file||String(file.type||"").indexOf("image/")!==0){cb(null,"That file is not an image.");return;}var fr=new FileReader();fr.onerror=function(){cb(null,"That file could not be read.");};fr.onload=function(){var img=new Image();img.onerror=function(){cb(null,"That file could not be read as an image.");};img.onload=function(){try{var w=img.naturalWidth||img.width||MAX,h=img.naturalHeight||img.height||MAX;var sc=Math.min(1,MAX/Math.max(w,h));var cw=Math.max(1,Math.round(w*sc)),ch=Math.max(1,Math.round(h*sc));var c=document.createElement("canvas");c.width=cw;c.height=ch;var x=c.getContext("2d");if(!x){cb(null,"This device cannot resize images.");return;}x.drawImage(img,0,0,cw,ch);cb(c.toDataURL("image/png"),null);}catch(e){cb(null,"That image could not be resized.");}};img.src=fr.result;};fr.readAsDataURL(file);}catch(e){cb(null,"That file could not be read.");}};})();</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:var(--brand-deep);color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:var(--brand-deep);border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var MIN=parseInt(localStorage.getItem("rustlers_zoom_min"),10);if(!MIN||MIN<800||MIN>1600)MIN=1180;var w=window.innerWidth||document.documentElement.clientWidth;var z=(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
+  <style>:root{--brand:#2fae4e;--brand-deep:#1c7a36;--brand-line:#2c4a36;--brand-fill:#17241b;--brand-rgb:47,174,78;--brand-deep-rgb:28,122,54;}</style><script>(function(){var D={brand:"#2fae4e",deep:"#1c7a36",line:"#2c4a36",fill:"#17241b"};function toHsl(h){h=String(h||"").trim();if(!/^#[0-9a-fA-F]{6}$/.test(h))return null;var r=parseInt(h.slice(1,3),16)/255,g=parseInt(h.slice(3,5),16)/255,b=parseInt(h.slice(5,7),16)/255;var mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=(mx+mn)/2,s=0,H=0;if(mx!==mn){var d=mx-mn;s=l>0.5?d/(2-mx-mn):d/(mx+mn);H=mx===r?((g-b)/d+(g<b?6:0)):mx===g?((b-r)/d+2):((r-g)/d+4);H*=60;}return [H,s*100,l*100];}function toHex(h,s,l){h=((h%360)+360)%360;s=Math.max(0,Math.min(100,s))/100;l=Math.max(0,Math.min(100,l))/100;var c=(1-Math.abs(2*l-1))*s,x=c*(1-Math.abs((h/60)%2-1)),m=l-c/2,r,g,b;if(h<60){r=c;g=x;b=0;}else if(h<120){r=x;g=c;b=0;}else if(h<180){r=0;g=c;b=x;}else if(h<240){r=0;g=x;b=c;}else if(h<300){r=x;g=0;b=c;}else{r=c;g=0;b=x;}var q=function(v){return Math.round((v+m)*255).toString(16).padStart(2,"0");};return "#"+q(r)+q(g)+q(b);}window.__brandFrom=function(hex){var a=toHsl(hex);if(!a)return null;var H=a[0],S=a[1],L=a[2];var aL=Math.max(38,Math.min(72,L));var dS=(S<=4)?S:Math.min(100,S+6);return {brand:toHex(H,S,aL),deep:toHex(H,dS,Math.max(22,Math.min(45,aL*0.67))),line:toHex(H,Math.min(25,S),23),fill:toHex(H,Math.min(22,S),12)};};function rgbTriplet(h){if(!/^#[0-9a-fA-F]{6}$/.test(String(h||"")))return null;return parseInt(h.slice(1,3),16)+","+parseInt(h.slice(3,5),16)+","+parseInt(h.slice(5,7),16);}window.__applyBrand=function(b){var r=document.documentElement,v=b||D;try{r.style.setProperty("--brand",v.brand||D.brand);r.style.setProperty("--brand-deep",v.deep||D.deep);r.style.setProperty("--brand-line",v.line||D.line);r.style.setProperty("--brand-fill",v.fill||D.fill);r.style.setProperty("--brand-rgb",rgbTriplet(v.brand||D.brand)||"47,174,78");r.style.setProperty("--brand-deep-rgb",rgbTriplet(v.deep||D.deep)||"28,122,54");}catch(e){}};try{var s=JSON.parse(localStorage.getItem("rustlers_v2")||"null");window.__applyBrand(s&&s.identity&&s.identity.brand);}catch(e){}})();</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__APP_BUILD=parseInt("147",10)||0;</script><script>(function(){var MAX=192;window.__logoFrom=function(file,cb){try{if(!file||String(file.type||"").indexOf("image/")!==0){cb(null,"That file is not an image.");return;}var fr=new FileReader();fr.onerror=function(){cb(null,"That file could not be read.");};fr.onload=function(){var img=new Image();img.onerror=function(){cb(null,"That file could not be read as an image.");};img.onload=function(){try{var w=img.naturalWidth||img.width||MAX,h=img.naturalHeight||img.height||MAX;var sc=Math.min(1,MAX/Math.max(w,h));var cw=Math.max(1,Math.round(w*sc)),ch=Math.max(1,Math.round(h*sc));var c=document.createElement("canvas");c.width=cw;c.height=ch;var x=c.getContext("2d");if(!x){cb(null,"This device cannot resize images.");return;}x.drawImage(img,0,0,cw,ch);cb(c.toDataURL("image/png"),null);}catch(e){cb(null,"That image could not be resized.");}};img.src=fr.result;};fr.readAsDataURL(file);}catch(e){cb(null,"That file could not be read.");}};})();</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:var(--brand-deep);color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:var(--brand-deep);border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var MIN=parseInt(localStorage.getItem("rustlers_zoom_min"),10);if(!MIN||MIN<800||MIN>1600)MIN=1180;var w=window.innerWidth||document.documentElement.clientWidth;var z=(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
 function E(t,c,x){var e=document.createElement(t);if(c)e.style.cssText=c;if(x!=null)e.textContent=x;return e;}
 function panel(){if(document.getElementById('__bk_ov'))return;
 var ov=E('div','position:fixed;inset:0;z-index:2147483646;background:rgba(6,9,7,.92);display:flex;align-items:center;justify-content:center;padding:20px;');ov.id='__bk_ov';
@@ -37,6 +37,37 @@ if(!((sea.games||[]).length||(sea.roster||[]).length||(sea.archive||[]).length))
 srow.appendChild(sportBtn(k,SPN[k]));any=true;});
 if(!any)srow.appendChild(E('div','font-size:12px;color:#8b9890;padding:4px 2px;','No sport has any data yet.'));})();
 box.appendChild(srow);
+
+// CHECK — the same audit the CLI runs, on the game that is open right now.
+// The app rests on one invariant: every stat goes through apply(), which
+// appends to g.plays, so the box score is the play log folded up. Worth being
+// able to ask that at the scorer's table rather than only after exporting.
+box.appendChild(E('div','font-size:11px;letter-spacing:2px;color:#8b9890;margin:14px 0 6px;','CHECK THIS GAME'));
+var rep=E('div','font-size:12px;line-height:1.55;color:#cdd6cf;margin-bottom:8px;');
+var chk=E('div','background:#131b15;border:1px solid var(--brand-line);color:#cdd6cf;font-weight:800;text-align:center;padding:12px;border-radius:10px;cursor:pointer;letter-spacing:1px;','DOES THE BOX SCORE MATCH THE LOG?');
+chk.onclick=function(){
+  while(rep.firstChild)rep.removeChild(rep.firstChild);
+  var s=null;try{s=JSON.parse(localStorage.getItem(KEY)||'null');}catch(e){}
+  var sea=s&&s.seasons&&s.seasons[s.sport];
+  var g=sea&&(sea.games||[]).filter(function(x){return x.id===sea.activeId;})[0];
+  if(!g){st.style.color='#e0a7a2';st.textContent='No game is open, so there is nothing to check.';return;}
+  if(!window.__auditGame){st.style.color='#e0a7a2';st.textContent='The audit did not load on this build.';return;}
+  var out=window.__auditGame(g,sea.roster||[]);
+  var f=(out&&out.findings)||[];
+  var hard=f.filter(function(x){return x.level!=='info';});
+  st.style.color=hard.length?'#e0b24d':'var(--brand)';
+  st.textContent=(g.date||'')+' vs '+(g.opp||'?')+' \u2014 '+((g.plays||[]).length)+' plays, '+
+    (hard.length? (hard.length+' thing(s) worth looking at.') : 'nothing adrift.');
+  if(!f.length){rep.appendChild(E('div','color:#8b9890;','Every number in the box score is exactly the play log, folded up.'));return;}
+  var COL={drift:'#e0574d',mismatch:'#e0b24d',orphan:'#e0b24d',info:'#8b9890'};
+  f.forEach(function(x){
+    rep.appendChild(E('div','color:'+(COL[x.level]||'#cdd6cf')+';margin-top:5px;',x.text));
+    if(x.detail)rep.appendChild(E('div','color:#8b9890;font-family:ui-monospace,monospace;font-size:11px;padding-left:10px;word-break:break-word;',x.detail));
+  });
+  rep.appendChild(E('div','color:#7d8a82;margin-top:8px;','A stat line with no player behind it usually means the other device logged it before the rosters met \u2014 open SYNC and the rosters will meet. This check never changes anything.'));
+};
+box.appendChild(chk);box.appendChild(rep);
+
 box.appendChild(st);
 box.appendChild(E('div','font-size:11px;letter-spacing:2px;color:#8b9890;margin:14px 0 6px;','PASTE A BACKUP TO RESTORE'));box.appendChild(ta);
 var rest=E('div','background:#131b15;border:1px solid var(--brand-line);color:#cdd6cf;font-weight:800;text-align:center;padding:12px;border-radius:10px;cursor:pointer;letter-spacing:1px;margin-top:10px;','RESTORE FROM PASTE');
@@ -3402,7 +3433,161 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
   if (document.readyState === 'loading') window.addEventListener('DOMContentLoaded', boot);
   else boot();
 })();
-</script>
+</script><script>(function(){function foldPlays(plays) {
+  const home = {}, away = {};
+  const add = (bucket, key, eff) => {
+    if (key == null || key === '' || !eff) return;
+    const k = String(key);
+    bucket[k] = bucket[k] || {};
+    for (const s in eff) {
+      if (typeof eff[s] === 'number') bucket[k][s] = (bucket[k][s] || 0) + eff[s];
+    }
+  };
+  (plays || []).forEach(p => {
+    const u = (p && p.undo) || {};
+    add(u.team === 'away' ? away : home, u.pid, u.eff);
+    (u.effs || []).forEach(e => {
+      if (!e) return;
+      add((e.team || u.team) === 'away' ? away : home, e.pid, e.eff);
+    });
+  });
+  return { home, away };
+}
+function diffTotals(stored, folded) {
+  const rows = [];
+  const ids = [...new Set([...Object.keys(stored || {}), ...Object.keys(folded || {})])];
+  ids.forEach(id => {
+    const a = (stored || {})[id] || {}, b = (folded || {})[id] || {};
+    const keys = [...new Set([...Object.keys(a), ...Object.keys(b)])].sort();
+    const bad = keys.filter(k => (Number(a[k]) || 0) !== (Number(b[k]) || 0))
+      .map(k => ({ stat: k, stored: Number(a[k]) || 0, log: Number(b[k]) || 0 }));
+    if (bad.length) rows.push({ id, diffs: bad });
+  });
+  return rows;
+}
+function auditGame(game, roster) {
+  const g = game || {};
+  const findings = [];
+  const note = (level, check, text, detail) =>
+    findings.push({ level, check, text, detail: detail || null });
+
+  const byId = {}; (roster || []).forEach(p => { if (p && p.id) byId[p.id] = p; });
+  const hname = id => byId[id] ? ('#' + (byId[id].num || '--') + ' ' + byId[id].name)
+                               : ('unknown id ' + id);
+  const vname = num => {
+    const m = ((g.vmeta || {})[num] || (g.vmeta || {})[Number(num)] || {});
+    return '#' + num + (m.name ? (' ' + m.name) : '');
+  };
+
+  const fold = foldPlays(g.plays);
+
+  // 1. THE INVARIANT. Stored totals must equal the fold over the log.
+  diffTotals(g.stats, fold.home).forEach(r => note('drift', 'totals',
+    hname(r.id) + ' — the box score and the play log disagree',
+    r.diffs.map(d => d.stat + ': box ' + d.stored + ', log ' + d.log).join('; ')));
+  diffTotals(g.vstats, fold.away).forEach(r => note('drift', 'totals',
+    'visitor ' + vname(r.id) + ' — the box score and the play log disagree',
+    r.diffs.map(d => d.stat + ': box ' + d.stored + ', log ' + d.log).join('; ')));
+
+  // 2. Stat lines belonging to nobody on this device. Not corruption: this is
+  //    what a stat from the other device looks like before the rosters meet.
+  //    It is also what makes a play read like nonsense, since both ends of it
+  //    resolve to an id with no name behind it.
+  Object.keys(g.stats || {}).filter(id => !byId[id]).forEach(id => {
+    // Name it by the ROLE it played, not by the first name in the label. A
+    // label opens with whoever the play is about and ends with whoever was
+    // credited alongside them ("#0 New Player · Kill · assist #1 Sam Stewert"),
+    // so an id sitting in effs must be read off the END. Taking the first match
+    // for both calls the assister by the killer's name -- which is exactly the
+    // misreading this whole tool exists to stop.
+    const named = [...new Set((g.plays || []).map(p => {
+      const u = p.undo || {}, L = String(p.label || '');
+      if (u.pid === id) return (L.match(/#\d+ [^·]+/) || [''])[0].trim();
+      if (!(u.effs || []).some(e => e && e.pid === id)) return '';
+      return (L.match(/#\d+ [^·]*$/) || [''])[0].trim();
+    }).filter(Boolean))];
+    note('orphan', 'roster', 'a stat line belongs to a player this device does not have',
+      id + '  ' + JSON.stringify(g.stats[id]) +
+      (named.length ? ('  — the log names it ' + named.join(' / ')) : ''));
+  });
+  const vr = (g.vroster || []).map(String);
+  Object.keys(g.vstats || {}).filter(n => vr.indexOf(String(n)) === -1).forEach(n =>
+    note('orphan', 'roster', 'a visitor stat line has no jersey on the visitor roster',
+      '#' + n + '  ' + JSON.stringify(g.vstats[n])));
+
+  // 3. A play's label is written once and never recomputed, so it is an
+  //    independent record of what the app MEANT. Where it names an assisting
+  //    player, the credited id has to be that player -- and never the killer.
+  (g.plays || []).forEach(p => {
+    const named = (String(p.label || '').match(/assist (#\d+[^·]*)$/) || [])[1];
+    if (!named) return;
+    const u = p.undo || {};
+    const credited = (u.effs || []).filter(e => e && e.eff && e.eff.assists)[0];
+    if (!credited) {
+      note('mismatch', 'assist', 'a play says "assist" but credits nobody', p.label);
+      return;
+    }
+    if (credited.pid === u.pid) {
+      note('mismatch', 'assist', 'an assist is credited to the player who got the kill',
+        p.label + '  (both are ' + hname(u.pid) + ')');
+      return;
+    }
+    if (!byId[credited.pid]) return;   // already reported as an orphan
+    const want = named.trim(), got = hname(credited.pid);
+    if (want !== got) note('mismatch', 'assist',
+      'a play credits someone other than the player its label names',
+      p.label + '  — credited ' + got);
+  });
+
+  // 4. The score, from the same log. Volleyball resets it every set, so only
+  //    the plays since the last "End of Set" count.
+  const plays = g.plays || [];
+  let scoreFrom = plays, scoped = false;
+  const endIdx = plays.findIndex(p => /^End of Set/i.test(String(p.label || '')));
+  if (endIdx >= 0) { scoreFrom = plays.slice(0, endIdx); scoped = true; }  // newest-first
+  const dR = scoreFrom.reduce((n, p) => n + (Number((p.undo || {}).dR) || 0), 0);
+  const dO = scoreFrom.reduce((n, p) => n + (Number((p.undo || {}).dO) || 0), 0);
+  if (Number(g.rScore || 0) !== dR || Number(g.oScore || 0) !== dO) {
+    note('drift', 'score', 'the score does not match the points in the log',
+      'shown ' + (g.rScore || 0) + '-' + (g.oScore || 0) + ', log ' + dR + '-' + dO +
+      (scoped ? '  (counting since the last End of Set)' : ''));
+  }
+
+  // 5. Ids have to be unique -- undo, redo and sync all address plays by id.
+  const seen = {};
+  plays.forEach(p => { if (p && p.id) seen[p.id] = (seen[p.id] || 0) + 1; });
+  Object.keys(seen).filter(k => seen[k] > 1).forEach(k =>
+    note('drift', 'ids', 'two plays share an id, so undo and sync cannot tell them apart',
+      k + ' appears ' + seen[k] + ' times'));
+
+  // 6. Shape: a home stat keys on a roster-id string, a visitor stat on a
+  //    number. One in the other's slot is a stat on a player who does not
+  //    exist, and it will never show up in either box score.
+  plays.forEach(p => {
+    const u = p.undo || {};
+    const check = (pid, team) => {
+      if (pid == null || pid === '') return;
+      if (team === 'away' && !/^\d+$/.test(String(pid)))
+        note('mismatch', 'shape', 'a visitor stat is keyed by something other than a jersey number',
+          String(pid) + '  in: ' + p.label);
+      if (team !== 'away' && /^\d+$/.test(String(pid)))
+        note('mismatch', 'shape', 'a home stat is keyed by a bare number instead of a roster id',
+          String(pid) + '  in: ' + p.label);
+    };
+    check(u.pid, u.team);
+    (u.effs || []).forEach(e => { if (e) check(e.pid, e.team || u.team); });
+  });
+
+  // 7. Not a defect, but it decides whether the next two-device result means
+  //    anything: a raw template token proves the device was on an old build.
+  const tok = plays.filter(p => /\{TEAM\}/.test(String(p.label || '')));
+  if (tok.length) note('info', 'build',
+    tok.length + ' play(s) logged the raw {TEAM} token, so this game was scored on a build older than 142',
+    JSON.stringify(tok[0].label));
+
+  return { findings: findings, folded: fold };
+}
+window.__auditGame=function(g,r){try{return auditGame(g,r);}catch(e){return {findings:[{level:"drift",check:"audit",text:"the audit itself failed",detail:String(e&&e.message||e)}]};}};})();</script>
   <meta charset="utf-8">
   <title>Bundled Page</title>
   <style>
