@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>:root{--brand:#2fae4e;--brand-deep:#1c7a36;--brand-line:#2c4a36;--brand-fill:#17241b;--brand-rgb:47,174,78;--brand-deep-rgb:28,122,54;}</style><script>(function(){var D={brand:"#2fae4e",deep:"#1c7a36",line:"#2c4a36",fill:"#17241b"};function toHsl(h){h=String(h||"").trim();if(!/^#[0-9a-fA-F]{6}$/.test(h))return null;var r=parseInt(h.slice(1,3),16)/255,g=parseInt(h.slice(3,5),16)/255,b=parseInt(h.slice(5,7),16)/255;var mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=(mx+mn)/2,s=0,H=0;if(mx!==mn){var d=mx-mn;s=l>0.5?d/(2-mx-mn):d/(mx+mn);H=mx===r?((g-b)/d+(g<b?6:0)):mx===g?((b-r)/d+2):((r-g)/d+4);H*=60;}return [H,s*100,l*100];}function toHex(h,s,l){h=((h%360)+360)%360;s=Math.max(0,Math.min(100,s))/100;l=Math.max(0,Math.min(100,l))/100;var c=(1-Math.abs(2*l-1))*s,x=c*(1-Math.abs((h/60)%2-1)),m=l-c/2,r,g,b;if(h<60){r=c;g=x;b=0;}else if(h<120){r=x;g=c;b=0;}else if(h<180){r=0;g=c;b=x;}else if(h<240){r=0;g=x;b=c;}else if(h<300){r=x;g=0;b=c;}else{r=c;g=0;b=x;}var q=function(v){return Math.round((v+m)*255).toString(16).padStart(2,"0");};return "#"+q(r)+q(g)+q(b);}window.__brandFrom=function(hex){var a=toHsl(hex);if(!a)return null;var H=a[0],S=a[1],L=a[2];var aL=Math.max(38,Math.min(72,L));var dS=(S<=4)?S:Math.min(100,S+6);return {brand:toHex(H,S,aL),deep:toHex(H,dS,Math.max(22,Math.min(45,aL*0.67))),line:toHex(H,Math.min(25,S),23),fill:toHex(H,Math.min(22,S),12)};};function rgbTriplet(h){if(!/^#[0-9a-fA-F]{6}$/.test(String(h||"")))return null;return parseInt(h.slice(1,3),16)+","+parseInt(h.slice(3,5),16)+","+parseInt(h.slice(5,7),16);}window.__applyBrand=function(b){var r=document.documentElement,v=b||D;try{r.style.setProperty("--brand",v.brand||D.brand);r.style.setProperty("--brand-deep",v.deep||D.deep);r.style.setProperty("--brand-line",v.line||D.line);r.style.setProperty("--brand-fill",v.fill||D.fill);r.style.setProperty("--brand-rgb",rgbTriplet(v.brand||D.brand)||"47,174,78");r.style.setProperty("--brand-deep-rgb",rgbTriplet(v.deep||D.deep)||"28,122,54");}catch(e){}};try{var s=JSON.parse(localStorage.getItem("rustlers_v2")||"null");window.__applyBrand(s&&s.identity&&s.identity.brand);}catch(e){}})();</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__APP_BUILD=parseInt("149",10)||0;</script><script>(function(){var MAX=192;window.__logoFrom=function(file,cb){try{if(!file||String(file.type||"").indexOf("image/")!==0){cb(null,"That file is not an image.");return;}var fr=new FileReader();fr.onerror=function(){cb(null,"That file could not be read.");};fr.onload=function(){var img=new Image();img.onerror=function(){cb(null,"That file could not be read as an image.");};img.onload=function(){try{var w=img.naturalWidth||img.width||MAX,h=img.naturalHeight||img.height||MAX;var sc=Math.min(1,MAX/Math.max(w,h));var cw=Math.max(1,Math.round(w*sc)),ch=Math.max(1,Math.round(h*sc));var c=document.createElement("canvas");c.width=cw;c.height=ch;var x=c.getContext("2d");if(!x){cb(null,"This device cannot resize images.");return;}x.drawImage(img,0,0,cw,ch);cb(c.toDataURL("image/png"),null);}catch(e){cb(null,"That image could not be resized.");}};img.src=fr.result;};fr.readAsDataURL(file);}catch(e){cb(null,"That file could not be read.");}};})();</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:var(--brand-deep);color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:var(--brand-deep);border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var MIN=parseInt(localStorage.getItem("rustlers_zoom_min"),10);if(!MIN||MIN<800||MIN>1600)MIN=1180;var w=window.innerWidth||document.documentElement.clientWidth;var z=(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
+  <style>:root{--brand:#2fae4e;--brand-deep:#1c7a36;--brand-line:#2c4a36;--brand-fill:#17241b;--brand-rgb:47,174,78;--brand-deep-rgb:28,122,54;}</style><script>(function(){var D={brand:"#2fae4e",deep:"#1c7a36",line:"#2c4a36",fill:"#17241b"};function toHsl(h){h=String(h||"").trim();if(!/^#[0-9a-fA-F]{6}$/.test(h))return null;var r=parseInt(h.slice(1,3),16)/255,g=parseInt(h.slice(3,5),16)/255,b=parseInt(h.slice(5,7),16)/255;var mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=(mx+mn)/2,s=0,H=0;if(mx!==mn){var d=mx-mn;s=l>0.5?d/(2-mx-mn):d/(mx+mn);H=mx===r?((g-b)/d+(g<b?6:0)):mx===g?((b-r)/d+2):((r-g)/d+4);H*=60;}return [H,s*100,l*100];}function toHex(h,s,l){h=((h%360)+360)%360;s=Math.max(0,Math.min(100,s))/100;l=Math.max(0,Math.min(100,l))/100;var c=(1-Math.abs(2*l-1))*s,x=c*(1-Math.abs((h/60)%2-1)),m=l-c/2,r,g,b;if(h<60){r=c;g=x;b=0;}else if(h<120){r=x;g=c;b=0;}else if(h<180){r=0;g=c;b=x;}else if(h<240){r=0;g=x;b=c;}else if(h<300){r=x;g=0;b=c;}else{r=c;g=0;b=x;}var q=function(v){return Math.round((v+m)*255).toString(16).padStart(2,"0");};return "#"+q(r)+q(g)+q(b);}window.__brandFrom=function(hex){var a=toHsl(hex);if(!a)return null;var H=a[0],S=a[1],L=a[2];var aL=Math.max(38,Math.min(72,L));var dS=(S<=4)?S:Math.min(100,S+6);return {brand:toHex(H,S,aL),deep:toHex(H,dS,Math.max(22,Math.min(45,aL*0.67))),line:toHex(H,Math.min(25,S),23),fill:toHex(H,Math.min(22,S),12)};};function rgbTriplet(h){if(!/^#[0-9a-fA-F]{6}$/.test(String(h||"")))return null;return parseInt(h.slice(1,3),16)+","+parseInt(h.slice(3,5),16)+","+parseInt(h.slice(5,7),16);}window.__applyBrand=function(b){var r=document.documentElement,v=b||D;try{r.style.setProperty("--brand",v.brand||D.brand);r.style.setProperty("--brand-deep",v.deep||D.deep);r.style.setProperty("--brand-line",v.line||D.line);r.style.setProperty("--brand-fill",v.fill||D.fill);r.style.setProperty("--brand-rgb",rgbTriplet(v.brand||D.brand)||"47,174,78");r.style.setProperty("--brand-deep-rgb",rgbTriplet(v.deep||D.deep)||"28,122,54");}catch(e){}};try{var s=JSON.parse(localStorage.getItem("rustlers_v2")||"null");window.__applyBrand(s&&s.identity&&s.identity.brand);}catch(e){}})();</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__APP_BUILD=parseInt("150",10)||0;</script><script>(function(){var MAX=192;window.__logoFrom=function(file,cb){try{if(!file||String(file.type||"").indexOf("image/")!==0){cb(null,"That file is not an image.");return;}var fr=new FileReader();fr.onerror=function(){cb(null,"That file could not be read.");};fr.onload=function(){var img=new Image();img.onerror=function(){cb(null,"That file could not be read as an image.");};img.onload=function(){try{var w=img.naturalWidth||img.width||MAX,h=img.naturalHeight||img.height||MAX;var sc=Math.min(1,MAX/Math.max(w,h));var cw=Math.max(1,Math.round(w*sc)),ch=Math.max(1,Math.round(h*sc));var c=document.createElement("canvas");c.width=cw;c.height=ch;var x=c.getContext("2d");if(!x){cb(null,"This device cannot resize images.");return;}x.drawImage(img,0,0,cw,ch);cb(c.toDataURL("image/png"),null);}catch(e){cb(null,"That image could not be resized.");}};img.src=fr.result;};fr.readAsDataURL(file);}catch(e){cb(null,"That file could not be read.");}};})();</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:var(--brand-deep);color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:var(--brand-deep);border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var MIN=parseInt(localStorage.getItem("rustlers_zoom_min"),10);if(!MIN||MIN<800||MIN>1600)MIN=1180;var w=window.innerWidth||document.documentElement.clientWidth;var z=(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
 function E(t,c,x){var e=document.createElement(t);if(c)e.style.cssText=c;if(x!=null)e.textContent=x;return e;}
 function panel(){if(document.getElementById('__bk_ov'))return;
 var ov=E('div','position:fixed;inset:0;z-index:2147483646;background:rgba(6,9,7,.92);display:flex;align-items:center;justify-content:center;padding:20px;');ov.id='__bk_ov';
@@ -2758,6 +2758,40 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
 
   function base() { return (cfg.host || HOST).replace(/\/+$/, '') + '/e/'; }
 
+  /*
+   * WHICH GAME IS THIS, REALLY?
+   *
+   * Two devices scoring one game mint DIFFERENT ids for it, so applyRemote
+   * deliberately ignores the sender's gid and stamps events with the game this
+   * device bound to the code. Comparing the two ids is what shipped once and it
+   * silently discarded a whole night's events, which is why
+   * sync-separate-games.test.js exists.
+   *
+   * But that left NOTHING checking the two devices are on the same game. When
+   * they were not, an entire match poured into another one: the 9/12 Wagner
+   * game's 89-74 landed on top of a 12-4 test game and read 101-78, with
+   * Wagner's whole visitor roster merged in behind it and every player's kills
+   * summed across both.
+   *
+   * The only identity both devices share is what a person typed in: the date
+   * and the opponent. Not an id -- an id is per-device by construction. So
+   * compare that, refuse anything that disagrees, and say so rather than
+   * quietly merging two matches.
+   */
+  function gameSig(g) {
+    if (!g) return '';
+    return String(g.date || '').trim() + '|' +
+           String(g.opp || '').trim().toLowerCase().replace(/\s+/g, ' ');
+  }
+
+  function noteMismatch(theirs) {
+    cfg.mismatch = { theirs: theirs || '', mine: cfg.sig || '', at: Date.now() };
+    save(CFG, cfg);
+  }
+  function clearMismatch() {
+    if (cfg.mismatch) { cfg.mismatch = null; save(CFG, cfg); }
+  }
+
   function homeRoster() {
     var s = load(KEY, null);
     if (!s || !s.seasons || !s.sport) return [];
@@ -3018,7 +3052,7 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
   }
 
   function outbound(g) {
-    var now = {}, undoneNow = {}, out = [];
+    var now = {}, undoneNow = {}, out = [], sig = gameSig(g);
     (g.plays || []).forEach(function (p) { if (p && p.id) now[p.id] = 1; });
     (g.undone || []).forEach(function (p) { if (p && p.id) undoneNow[p.id] = 1; });
     var live = cfg.live || {};
@@ -3026,17 +3060,17 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
 
     (g.plays || []).forEach(function (p) {
       if (!p || !p.id) return;
-      if (!cfg.sent[p.id]) { out.push({ t: 'play', gid: g.id, dev: cfg.dev, play: p, pmap: pmapFor(p) }); return; }
-      if (wasUndone[p.id]) out.push({ t: 'play', gid: g.id, dev: cfg.dev, play: p, pmap: pmapFor(p) }); // redone here
+      if (!cfg.sent[p.id]) { out.push({ t: 'play', gid: g.id, sig: sig, dev: cfg.dev, play: p, pmap: pmapFor(p) }); return; }
+      if (wasUndone[p.id]) out.push({ t: 'play', gid: g.id, sig: sig, dev: cfg.dev, play: p, pmap: pmapFor(p) }); // redone here
     });
     Object.keys(live).forEach(function (id) {
-      if (!now[id] && undoneNow[id]) out.push({ t: 'undo', gid: g.id, dev: cfg.dev, id: id });
+      if (!now[id] && undoneNow[id]) out.push({ t: 'undo', gid: g.id, sig: sig, dev: cfg.dev, id: id });
     });
     // say who we are every so often, so the other device can always map our
     // ids back to jerseys without waiting for a republish
     if (!cfg.rosterAt || (Date.now() - cfg.rosterAt) > 60000) {
       cfg.rosterAt = Date.now();
-      out.push({ t: 'roster', gid: g.id, dev: cfg.dev, map: rosterMap(),
+      out.push({ t: 'roster', gid: g.id, sig: sig, dev: cfg.dev, map: rosterMap(),
                  players: rosterPlayers(), vis: visitorPlayers(g) });
     }
     return { events: out, now: now, undone: undoneNow };
@@ -3057,6 +3091,10 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
     // actually worth making. Comparing the two ids is what shipped, and it
     // silently discarded every event for a whole game.
     if (!cfg.gid) return false;
+    // ...but the sender's GAME still has to be the game this code is for. The
+    // id cannot say so; what the two scorers typed can.
+    if (ev.sig && cfg.sig && ev.sig !== cfg.sig) { noteMismatch(ev.sig); return false; }
+    clearMismatch();
     ev.gid = cfg.gid;
     // Keep every pmap, including from a play we already hold and will skip:
     // a republish is how the mapping for OLD plays reaches us, and that is
@@ -3112,7 +3150,14 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
     var g = activeGame();
     if (!g) { status = 'no game'; return; }
     // bind this code to whichever game was open when sync began
-    if (!cfg.gid) { cfg.gid = g.id; save(CFG, cfg); }
+    if (!cfg.gid) { cfg.gid = g.id; cfg.sig = gameSig(g); save(CFG, cfg); }
+    // The open game is not the one this code is for. Publishing its plays
+    // pours a whole match into somebody else's -- which is exactly what
+    // happened: 89-74 landed on top of 12-4 and read 101-78. Stop, and make
+    // the chip say why instead of sitting there looking live.
+    if (cfg.sig && gameSig(g) !== cfg.sig) {
+      status = 'other game'; noteMismatch(gameSig(g)); paint(); return;
+    }
     inflight = true;
     var o;
     // outbound() runs outside the promise chain, so a throw here would leave
@@ -3399,6 +3444,28 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
       box.appendChild(fixRow);
     }
 
+    /*
+     * THE TWO DEVICES ARE ON DIFFERENT GAMES. Loudest thing in the panel,
+     * because the failure it prevents is the worst one this app has had: a
+     * whole match poured into another one, every player's totals summed across
+     * both, and a final score that looked like a typo rather than a bug.
+     */
+    if (cfg.mismatch) {
+      var pretty = function (sig) {
+        var bits = String(sig || '').split('|');
+        return (bits[0] || '?') + ' vs ' + (bits[1] ? bits[1] : '?');
+      };
+      var warn = E('div', 'margin-top:14px;padding:12px;border:1px solid #e0574d;border-radius:10px;background:#1a1414;');
+      warn.appendChild(E('div', 'font-size:12px;font-weight:800;letter-spacing:1px;color:#e0574d;margin-bottom:6px;',
+        'DIFFERENT GAMES — NOTHING IS BEING SYNCED'));
+      warn.appendChild(E('div', 'font-size:12px;color:#e0a7a2;line-height:1.55;',
+        'This code is for ' + pretty(cfg.mismatch.mine) + ', and ' + pretty(cfg.mismatch.theirs) +
+        ' is open somewhere. Nothing has been applied in either direction. ' +
+        'Open the same game on both devices — matched on the date and the opponent, ' +
+        'so check those are typed the same — then press START SYNC again.'));
+      box.appendChild(warn);
+    }
+
     // What the roster merge did, and — more importantly — what it refused to
     // do. A merge that silently rewrote a name would be found out in the box
     // score three quarters later, so anything ambiguous is printed and left.
@@ -3443,6 +3510,9 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
       var _g = activeGame();
       cfg.code = v; cfg.since = 0; cfg.sent = {}; cfg.live = {}; cfg.undone = {};
       cfg.gid = _g ? _g.id : null;
+      // The game this code is FOR, by what a person typed rather than by an id
+      // (ids are per-device). Everything after this is checked against it.
+      cfg.sig = gameSig(_g); cfg.mismatch = null;
       // publish the roster on the first tick rather than up to a minute later:
       // pressing START SYNC is when a person expects the rosters to meet
       cfg.rosterAt = 0; cfg.rmerge = null;
