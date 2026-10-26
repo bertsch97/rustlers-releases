@@ -124,7 +124,7 @@ try{
   }
 }catch(e){}
 })();</script>
-<script>(function(){var D={brand:"#2fae4e",deep:"#1c7a36",line:"#2c4a36",fill:"#17241b"};function toHsl(h){h=String(h||"").trim();if(!/^#[0-9a-fA-F]{6}$/.test(h))return null;var r=parseInt(h.slice(1,3),16)/255,g=parseInt(h.slice(3,5),16)/255,b=parseInt(h.slice(5,7),16)/255;var mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=(mx+mn)/2,s=0,H=0;if(mx!==mn){var d=mx-mn;s=l>0.5?d/(2-mx-mn):d/(mx+mn);H=mx===r?((g-b)/d+(g<b?6:0)):mx===g?((b-r)/d+2):((r-g)/d+4);H*=60;}return [H,s*100,l*100];}function toHex(h,s,l){h=((h%360)+360)%360;s=Math.max(0,Math.min(100,s))/100;l=Math.max(0,Math.min(100,l))/100;var c=(1-Math.abs(2*l-1))*s,x=c*(1-Math.abs((h/60)%2-1)),m=l-c/2,r,g,b;if(h<60){r=c;g=x;b=0;}else if(h<120){r=x;g=c;b=0;}else if(h<180){r=0;g=c;b=x;}else if(h<240){r=0;g=x;b=c;}else if(h<300){r=x;g=0;b=c;}else{r=c;g=0;b=x;}var q=function(v){return Math.round((v+m)*255).toString(16).padStart(2,"0");};return "#"+q(r)+q(g)+q(b);}window.__brandFrom=function(hex){var a=toHsl(hex);if(!a)return null;var H=a[0],S=a[1],L=a[2];var aL=Math.max(38,Math.min(72,L));var dS=(S<=4)?S:Math.min(100,S+6);return {brand:toHex(H,S,aL),deep:toHex(H,dS,Math.max(22,Math.min(45,aL*0.67))),line:toHex(H,Math.min(25,S),23),fill:toHex(H,Math.min(22,S),12)};};function rgbTriplet(h){if(!/^#[0-9a-fA-F]{6}$/.test(String(h||"")))return null;return parseInt(h.slice(1,3),16)+","+parseInt(h.slice(3,5),16)+","+parseInt(h.slice(5,7),16);}window.__applyBrand=function(b){var r=document.documentElement,v=b||D;try{r.style.setProperty("--brand",v.brand||D.brand);r.style.setProperty("--brand-deep",v.deep||D.deep);r.style.setProperty("--brand-line",v.line||D.line);r.style.setProperty("--brand-fill",v.fill||D.fill);r.style.setProperty("--brand-rgb",rgbTriplet(v.brand||D.brand)||"47,174,78");r.style.setProperty("--brand-deep-rgb",rgbTriplet(v.deep||D.deep)||"28,122,54");}catch(e){}};try{var s=JSON.parse(localStorage.getItem("rustlers_v2")||"null");window.__applyBrand(s&&s.identity&&s.identity.brand);}catch(e){}})();</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__isVT=function(k){return /^volleyballT[0-9]*$/.test(String(k||''));};window.__vtIdx=function(k){return k==='volleyballT'?1:(parseInt(String(k).slice(11),10)||0);};window.__vtLetter=function(k){var n=window.__vtIdx(k);return (n>0&&n<=26)?String.fromCharCode(64+n):String(n);};window.__vtKeys=function(se){return Object.keys(se||{}).filter(window.__isVT).sort(function(a,b){return window.__vtIdx(a)-window.__vtIdx(b);});};window.__APP_BUILD=parseInt("204",10)||0;window.__APP_VERSION=(function(v){return /^[0-9]+\.[0-9]+\.[0-9]+$/.test(v)?v:'';})("2.12.0");</script><script>(function(){var MAX=192;window.__logoFrom=function(file,cb){try{if(!file||String(file.type||"").indexOf("image/")!==0){cb(null,"That file is not an image.");return;}var fr=new FileReader();fr.onerror=function(){cb(null,"That file could not be read.");};fr.onload=function(){var img=new Image();img.onerror=function(){cb(null,"That file could not be read as an image.");};img.onload=function(){try{var w=img.naturalWidth||img.width||MAX,h=img.naturalHeight||img.height||MAX;var sc=Math.min(1,MAX/Math.max(w,h));var cw=Math.max(1,Math.round(w*sc)),ch=Math.max(1,Math.round(h*sc));var c=document.createElement("canvas");c.width=cw;c.height=ch;var x=c.getContext("2d");if(!x){cb(null,"This device cannot resize images.");return;}x.drawImage(img,0,0,cw,ch);cb(c.toDataURL("image/png"),null);}catch(e){cb(null,"That image could not be resized.");}};img.src=fr.result;};fr.readAsDataURL(file);}catch(e){cb(null,"That file could not be read.");}};})();</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:var(--brand-deep);color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:var(--brand-deep);border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var _w0=window.innerWidth||document.documentElement.clientWidth;var MIN=parseInt(localStorage.getItem(_w0>=1000?"rustlers_zoom_wide":"rustlers_zoom_min"),10);var usr=!!MIN&&MIN>=400&&MIN<=3200;if(!usr)MIN=(_w0<700?600:_w0<1000?900:1180);var w=_w0;var z=usr?(Math.abs(w-MIN)<2?0:w/MIN):(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
+<script>(function(){var D={brand:"#2fae4e",deep:"#1c7a36",line:"#2c4a36",fill:"#17241b"};function toHsl(h){h=String(h||"").trim();if(!/^#[0-9a-fA-F]{6}$/.test(h))return null;var r=parseInt(h.slice(1,3),16)/255,g=parseInt(h.slice(3,5),16)/255,b=parseInt(h.slice(5,7),16)/255;var mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=(mx+mn)/2,s=0,H=0;if(mx!==mn){var d=mx-mn;s=l>0.5?d/(2-mx-mn):d/(mx+mn);H=mx===r?((g-b)/d+(g<b?6:0)):mx===g?((b-r)/d+2):((r-g)/d+4);H*=60;}return [H,s*100,l*100];}function toHex(h,s,l){h=((h%360)+360)%360;s=Math.max(0,Math.min(100,s))/100;l=Math.max(0,Math.min(100,l))/100;var c=(1-Math.abs(2*l-1))*s,x=c*(1-Math.abs((h/60)%2-1)),m=l-c/2,r,g,b;if(h<60){r=c;g=x;b=0;}else if(h<120){r=x;g=c;b=0;}else if(h<180){r=0;g=c;b=x;}else if(h<240){r=0;g=x;b=c;}else if(h<300){r=x;g=0;b=c;}else{r=c;g=0;b=x;}var q=function(v){return Math.round((v+m)*255).toString(16).padStart(2,"0");};return "#"+q(r)+q(g)+q(b);}window.__brandFrom=function(hex){var a=toHsl(hex);if(!a)return null;var H=a[0],S=a[1],L=a[2];var aL=Math.max(38,Math.min(72,L));var dS=(S<=4)?S:Math.min(100,S+6);return {brand:toHex(H,S,aL),deep:toHex(H,dS,Math.max(22,Math.min(45,aL*0.67))),line:toHex(H,Math.min(25,S),23),fill:toHex(H,Math.min(22,S),12)};};function rgbTriplet(h){if(!/^#[0-9a-fA-F]{6}$/.test(String(h||"")))return null;return parseInt(h.slice(1,3),16)+","+parseInt(h.slice(3,5),16)+","+parseInt(h.slice(5,7),16);}window.__applyBrand=function(b){var r=document.documentElement,v=b||D;try{r.style.setProperty("--brand",v.brand||D.brand);r.style.setProperty("--brand-deep",v.deep||D.deep);r.style.setProperty("--brand-line",v.line||D.line);r.style.setProperty("--brand-fill",v.fill||D.fill);r.style.setProperty("--brand-rgb",rgbTriplet(v.brand||D.brand)||"47,174,78");r.style.setProperty("--brand-deep-rgb",rgbTriplet(v.deep||D.deep)||"28,122,54");}catch(e){}};try{var s=JSON.parse(localStorage.getItem("rustlers_v2")||"null");window.__applyBrand(s&&s.identity&&s.identity.brand);}catch(e){}})();</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__isVT=function(k){return /^volleyballT[0-9]*$/.test(String(k||''));};window.__vtIdx=function(k){return k==='volleyballT'?1:(parseInt(String(k).slice(11),10)||0);};window.__vtLetter=function(k){var n=window.__vtIdx(k);return (n>0&&n<=26)?String.fromCharCode(64+n):String(n);};window.__vtKeys=function(se){return Object.keys(se||{}).filter(window.__isVT).sort(function(a,b){return window.__vtIdx(a)-window.__vtIdx(b);});};window.__APP_BUILD=parseInt("205",10)||0;window.__APP_VERSION=(function(v){return /^[0-9]+\.[0-9]+\.[0-9]+$/.test(v)?v:'';})("2.13.0");</script><script>(function(){var MAX=192;window.__logoFrom=function(file,cb){try{if(!file||String(file.type||"").indexOf("image/")!==0){cb(null,"That file is not an image.");return;}var fr=new FileReader();fr.onerror=function(){cb(null,"That file could not be read.");};fr.onload=function(){var img=new Image();img.onerror=function(){cb(null,"That file could not be read as an image.");};img.onload=function(){try{var w=img.naturalWidth||img.width||MAX,h=img.naturalHeight||img.height||MAX;var sc=Math.min(1,MAX/Math.max(w,h));var cw=Math.max(1,Math.round(w*sc)),ch=Math.max(1,Math.round(h*sc));var c=document.createElement("canvas");c.width=cw;c.height=ch;var x=c.getContext("2d");if(!x){cb(null,"This device cannot resize images.");return;}x.drawImage(img,0,0,cw,ch);cb(c.toDataURL("image/png"),null);}catch(e){cb(null,"That image could not be resized.");}};img.src=fr.result;};fr.readAsDataURL(file);}catch(e){cb(null,"That file could not be read.");}};})();</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:var(--brand-deep);color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:var(--brand-deep);border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var _w0=window.innerWidth||document.documentElement.clientWidth;var MIN=parseInt(localStorage.getItem(_w0>=1000?"rustlers_zoom_wide":"rustlers_zoom_min"),10);var usr=!!MIN&&MIN>=400&&MIN<=3200;if(!usr)MIN=(_w0<700?600:_w0<1000?900:1180);var w=_w0;var z=usr?(Math.abs(w-MIN)<2?0:w/MIN):(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
 function E(t,c,x){var e=document.createElement(t);if(c)e.style.cssText=c;if(x!=null)e.textContent=x;return e;}
 function panel(){if(document.getElementById('__bk_ov'))return;
 var ov=E('div','position:fixed;inset:0;z-index:2147483646;background:rgba(6,9,7,.92);display:flex;align-items:center;justify-content:center;padding:20px;');ov.id='__bk_ov';
@@ -321,7 +321,7 @@ function mark(){
 // VOICE / zoom / BACKUP / version / SYNC used to be five fixed boxes stacked up the right edge, sitting on
 // top of buttons and, on a tablet, on the CLEAR button of the selected-player bar. They now live in one
 // small handle; its dot is the sync status, and the rest open on a tap.
-var SECOND=['__voice_toggle','__zoom_ctl','__bk_btn','__cal_btn','__cal_now','__clear_btn','__restart_btn','__ver_lbl'];
+var SECOND=['__voice_toggle','__zoom_ctl','__bk_btn','__cal_btn','__cal_now','__clear_btn','__restart_btn','__season_btn','__ver_lbl'];
 function flat(el){ el.style.position='static'; el.style.right='auto'; el.style.bottom='auto'; el.style.left='auto'; el.style.top='auto'; el.style.margin='0'; el.style.zIndex='auto'; }
 function dock(){
   var d=document.getElementById('__dock'), more, row, hd, dot;
@@ -5028,7 +5028,473 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
   if (document.readyState === 'loading') window.addEventListener('DOMContentLoaded', boot);
   else boot();
 })();
-</script><script>(function(){function foldPlays(plays) {
+</script><script>/*mod:rollups*/
+/*
+ * season/rollups.js -- season and career totals, per player, kept on this device.
+ *
+ * Like sync/sync.js it runs outside the component and only OBSERVES: it reads
+ * localStorage['rustlers_v2'] (never writes it) and keeps its own key,
+ * 'rustlers_rollups'. A bug in here can leave a total stale; it cannot touch a
+ * game. Delete this block from www/index.html (and '__season_btn' from SECOND)
+ * and the app is exactly what it was.
+ *
+ * WHY IT CANNOT DOUBLE-COUNT. What is stored is one entry PER GAME, keyed by
+ * sport + game id: that game's box-score stats per player. Season and career
+ * totals are never stored as running numbers; they are SUMS over those entries,
+ * computed when shown. Finalising a game twice replaces its entry, so there is
+ * nothing to add twice. Reopening a game removes its entry (a half-played game
+ * must not count); finalising it again puts the new numbers in.
+ *
+ * WHO IS A PLAYER. Player ids are minted fresh each season, so they cannot tie
+ * a career together. A player is the lower-cased letters and digits of the
+ * name (the jersey number only when there is no name). Within one sport.
+ *
+ * NOTHING IS OVERWRITTEN WITHOUT A LOOK. The automatic path only ever ingests a
+ * game it SAW go from not-final to final. Games that were already final when
+ * this module first met them, and anything the repair would add, change or
+ * remove, wait for RECALCULATE FROM GAMES, which shows a preview first.
+ */
+(function (root) {
+  var KEY = 'rustlers_v2';
+  var STORE = 'rustlers_rollups';
+  var FLAGS = 'rustlers_flags';
+  var FLAG = 'rollups';
+  var DEBOUNCE = 1200;
+
+  function readJSON(k, d) {
+    try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }
+    catch (e) { return d; }
+  }
+  function writeJSON(k, v) {
+    try { localStorage.setItem(k, JSON.stringify(v)); return true; }
+    catch (e) { return false; }
+  }
+
+  // ---- flag ---------------------------------------------------------------
+  function flagOn() { return readJSON(FLAGS, {})[FLAG] !== false; }
+  function setFlag(on) {
+    var was = flagOn();
+    var f = readJSON(FLAGS, {}); f[FLAG] = !!on; writeJSON(FLAGS, f);
+    // while it was off, games came and went unseen: forget what was seen, so a game that
+    // finished in the meantime waits for the preview instead of looking like a fresh finish
+    if (on && !was) { var s = readJSON(STORE, null); if (s && s.seen) { s.seen = {}; writeJSON(STORE, s); } }
+  }
+
+  // ---- identity -----------------------------------------------------------
+  function norm(s) { return String(s == null ? '' : s).toLowerCase().replace(/[^a-z0-9]/g, ''); }
+  function pkeyOf(p) {
+    var n = norm(p && p.name);
+    if (n) return n;
+    var num = p && p.num;
+    return (num != null && String(num) !== '') ? '#' + num : null;
+  }
+
+  // ---- reading the app's state -------------------------------------------
+  function seasonLabel(sea) {
+    if (sea && sea.seasonLabel) return sea.seasonLabel;
+    try { var p = root.__appComp && root.__appComp.props; if (p && p.season) return p.season; } catch (e) {}
+    return 'Current season';
+  }
+
+  // Every game of every sport: the live season, the one set aside while an
+  // archive is being viewed, and each archived season. De-duplicated by id
+  // because viewing an archive puts its games in BOTH places.
+  function collect(state) {
+    var out = [], seen = {};
+    Object.keys((state && state.seasons) || {}).forEach(function (sp) {
+      var sea = state.seasons[sp]; if (!sea) return;
+      function add(label, roster, games) {
+        (games || []).forEach(function (g) {
+          if (!g || g.id == null) return;
+          var k = sp + '|' + g.id; if (seen[k]) return; seen[k] = 1;
+          out.push({ key: k, sport: sp, season: label, g: g, roster: roster || [] });
+        });
+      }
+      var live = seasonLabel(sea);
+      if (sea.viewingArchive && sea.liveSnapshot) {
+        add(live, sea.liveSnapshot.roster, sea.liveSnapshot.games);
+        add(sea.viewingArchive.label || 'Archive', sea.roster, sea.games);
+      } else {
+        add(live, sea.roster, sea.games);
+      }
+      (sea.archive || []).forEach(function (a) {
+        add(a.label || 'Archive', (a.roster && a.roster.length) ? a.roster : sea.roster, a.games);
+      });
+    });
+    return out;
+  }
+
+  // One game's box score as {playerKey: {name, num, stats}}. Only our own
+  // team (g.stats); only counters that are not zero.
+  function contribution(c) {
+    var players = {}, byId = {};
+    (c.roster || []).forEach(function (p) { byId[p.id] = p; });
+    var stats = c.g.stats || {};
+    Object.keys(stats).forEach(function (id) {
+      var st = stats[id] || {}, nz = {}, any = false;
+      Object.keys(st).forEach(function (k) {
+        var v = st[k];
+        if (typeof v === 'number' && isFinite(v) && v !== 0) { nz[k] = v; any = true; }
+      });
+      if (!any) return;
+      var p = byId[id];
+      // a stat line whose player is no longer on the roster is kept under its id
+      // rather than dropped: losing a number silently is the worse failure
+      var key = (p && pkeyOf(p)) || ('?' + id);
+      var rec = players[key];
+      if (!rec) { rec = players[key] = { name: p ? (p.name || '') : '', num: p ? p.num : '', stats: {} }; }
+      Object.keys(nz).forEach(function (k) { rec.stats[k] = (rec.stats[k] || 0) + nz[k]; });
+    });
+    return players;
+  }
+
+  function entryOf(c) {
+    var g = c.g;
+    return {
+      sport: c.sport, season: c.season, date: g.date || '', opp: g.opp || '',
+      us: g.rScore || 0, them: g.oScore || 0, setsUs: g.rSets || 0, setsThem: g.oSets || 0,
+      players: contribution(c)
+    };
+  }
+  function sigOf(e) { return JSON.stringify(e); }
+
+  // ---- the store ----------------------------------------------------------
+  function emptyStore() { return { v: 1, games: {}, seen: {}, log: [] }; }
+  function loadStore() {
+    var s = readJSON(STORE, null);
+    if (!s || typeof s !== 'object' || !s.games) return emptyStore();
+    if (!s.seen) s.seen = {};
+    if (!s.log) s.log = [];
+    return s;
+  }
+  function saveStore(s) { return writeJSON(STORE, s); }
+  function note(store, type, key, msg) {
+    store.log.push({ t: Date.now(), type: type, key: key, msg: msg });
+    if (store.log.length > 100) store.log.splice(0, store.log.length - 100);
+  }
+
+  // The automatic path. Mutates `store`; returns what it did.
+  //   ingest  a game seen going from not-final to final (or one already stored whose numbers changed)
+  //   drop    a stored game that is no longer final (reopened)
+  //   pending final games it has never seen non-final and does not hold -- left for the repair's preview
+  function reconcile(state, store, now) {
+    var res = { ingested: [], updated: [], dropped: [], pending: [] };
+    var present = {};
+    collect(state).forEach(function (c) {
+      present[c.key] = 1;
+      var final = c.g.status === 'final';
+      var held = store.games[c.key];
+      if (final) {
+        if (held) {
+          var e = entryOf(c);
+          if (sigOf(e) !== sigOf(stripTimes(held))) {
+            e.at = held.at; e.updatedAt = now; store.games[c.key] = e;
+            res.updated.push(c.key); note(store, 'update', c.key, 'numbers changed, entry replaced');
+          }
+        } else if (store.seen[c.key] && store.seen[c.key] !== 'final') {
+          var n = entryOf(c); n.at = now; n.updatedAt = now; store.games[c.key] = n;
+          res.ingested.push(c.key); note(store, 'ingest', c.key, c.sport + ' ' + n.date + ' vs ' + n.opp);
+        } else {
+          res.pending.push(c.key);
+        }
+        store.seen[c.key] = 'final';
+      } else {
+        if (held) {
+          delete store.games[c.key];
+          res.dropped.push(c.key); note(store, 'drop', c.key, 'game reopened');
+        }
+        store.seen[c.key] = 'live';
+      }
+    });
+    // seen-markers for games that no longer exist are harmless; stored games
+    // whose game is gone are KEPT (history), only the repair removes them
+    return res;
+  }
+  function stripTimes(e) {
+    var o = {}; Object.keys(e).forEach(function (k) { if (k !== 'at' && k !== 'updatedAt') o[k] = e[k]; });
+    return o;
+  }
+
+  // What RECALCULATE FROM GAMES would do, without doing it.
+  function plan(state, store) {
+    var want = {};
+    collect(state).forEach(function (c) { if (c.g.status === 'final') want[c.key] = entryOf(c); });
+    var p = { add: [], change: [], remove: [], same: 0, want: want };
+    Object.keys(want).forEach(function (k) {
+      var held = store.games[k];
+      if (!held) p.add.push(k);
+      else if (sigOf(want[k]) !== sigOf(stripTimes(held))) p.change.push(k);
+      else p.same++;
+    });
+    Object.keys(store.games).forEach(function (k) { if (!want[k]) p.remove.push(k); });
+    return p;
+  }
+  function applyPlan(store, p, now) {
+    p.add.concat(p.change).forEach(function (k) {
+      var e = p.want[k], held = store.games[k];
+      e.at = held ? held.at : now; e.updatedAt = now; store.games[k] = e;
+    });
+    p.remove.forEach(function (k) { delete store.games[k]; });
+    note(store, 'recalc', '', '+' + p.add.length + ' ~' + p.change.length + ' -' + p.remove.length);
+    store.recalcAt = now;
+    return store;
+  }
+
+  // ---- totals -------------------------------------------------------------
+  function addInto(into, src) {
+    Object.keys(src).forEach(function (k) { into[k] = (into[k] || 0) + src[k]; });
+  }
+  // {seasons:{label:{key:row}}, career:{key:row}} for one sport. row = {name,num,gp,stats}
+  function totals(store, sport) {
+    var out = { seasons: {}, career: {}, order: [] };
+    var list = Object.keys(store.games).map(function (k) { return store.games[k]; })
+      .filter(function (e) { return e.sport === sport; });
+    list.sort(function (a, b) { return (a.at || 0) - (b.at || 0); });
+    list.forEach(function (e) {
+      if (out.order.indexOf(e.season) < 0) out.order.push(e.season);
+      var S = out.seasons[e.season] || (out.seasons[e.season] = {});
+      Object.keys(e.players).forEach(function (pk) {
+        var pl = e.players[pk];
+        [S, out.career].forEach(function (T) {
+          var r = T[pk] || (T[pk] = { name: pl.name, num: pl.num, gp: 0, stats: {} });
+          r.gp++; addInto(r.stats, pl.stats);
+          if (pl.name) { r.name = pl.name; r.num = pl.num; }
+        });
+      });
+    });
+    return out;
+  }
+  function gameCount(store, sport, season) {
+    return Object.keys(store.games).filter(function (k) {
+      var e = store.games[k]; return e.sport === sport && (season == null || e.season === season);
+    }).length;
+  }
+
+  // ---- the driver ---------------------------------------------------------
+  var timer = null;
+  function scan() {
+    if (!flagOn()) return null;
+    var state = readJSON(KEY, null);
+    if (!state || !state.seasons) return null;
+    var store = loadStore();
+    var before = JSON.stringify(store);
+    var res = reconcile(state, store, Date.now());
+    if (JSON.stringify(store) !== before) saveStore(store);
+    res.store = store;
+    return res;
+  }
+  function schedule() {
+    if (timer) return;
+    timer = setTimeout(function () { timer = null; try { scan(); } catch (e) {} }, DEBOUNCE);
+  }
+  // Watch writes to the app's own key. localStorage.setItem is the one place every
+  // state change passes through (componentDidUpdate saves on each), so this
+  // sees a game end however it was ended (button, sync, a restored backup).
+  function hook() {
+    try {
+      var proto = Object.getPrototypeOf(localStorage);
+      var orig = proto.setItem;
+      if (orig.__rollupsHooked) return;
+      var wrapped = function (k, v) {
+        var r = orig.apply(this, arguments);
+        if (k === KEY && this === localStorage) schedule();
+        return r;
+      };
+      wrapped.__rollupsHooked = true;
+      proto.setItem = wrapped;
+    } catch (e) {}
+  }
+
+  // ---- panel --------------------------------------------------------------
+  function E(t, c, x) { var e = document.createElement(t); if (c) e.style.cssText = c; if (x != null) e.textContent = x; return e; }
+  var SPN = { basketball: 'Girls Basketball', basketballB: 'Boys Basketball', football: 'Football', volleyball: 'Volleyball', baseball: 'Baseball' };
+  function sportName(sp) {
+    try { var c = root.__appComp && root.__appComp.cfg && root.__appComp.cfg[sp]; if (c && c.label) return c.label; } catch (e) {}
+    return SPN[sp] || sp;
+  }
+  function tablesFor(sport) {
+    var c = null;
+    try { c = root.__appComp.cfg[sport]; } catch (e) {}
+    var out = [];
+    if (!c) return out;
+    [['', c.box], ['DEFENSE', c.defBox], ['KICKING', c.kickBox]].forEach(function (t) {
+      if (t[1] && t[1].cols && typeof t[1].row === 'function') out.push({ title: t[0], cols: t[1].cols, row: t[1].row, any: t[1].any });
+    });
+    return out;
+  }
+  var CHIP = 'padding:7px 11px;border-radius:8px;border:1px solid var(--brand-line,#2c4a36);background:#131b15;color:#cdd6cf;font-weight:800;font-size:12px;letter-spacing:1px;cursor:pointer;';
+  var CHIP_ON = 'padding:7px 11px;border-radius:8px;border:1px solid var(--brand-line,#2c4a36);background:var(--brand-deep,#1c7a36);color:#fff;font-weight:800;font-size:12px;letter-spacing:1px;cursor:pointer;';
+  var ui = { sport: null, view: 'season', season: null, preview: null };
+
+  function close() { var o = document.getElementById('__season_ov'); if (o) o.remove(); }
+  function open() {
+    close();
+    var ov = E('div', 'position:fixed;inset:0;z-index:2147483646;background:rgba(6,9,7,.92);display:flex;align-items:flex-start;justify-content:center;padding:14px;overflow:auto;');
+    ov.id = '__season_ov';
+    ov.addEventListener('click', function (e) { if (e.target === ov) close(); });
+    document.body.appendChild(ov);
+    draw();
+  }
+  function draw() {
+    var ov = document.getElementById('__season_ov'); if (!ov) return;
+    while (ov.firstChild) ov.removeChild(ov.firstChild);
+    var box = E('div', 'background:#131b15;border:1px solid #26332b;border-radius:14px;max-width:880px;width:100%;padding:18px;color:#eef2ef;font-family:-apple-system,Segoe UI,Roboto,sans-serif;box-sizing:border-box;');
+    ov.appendChild(box);
+    var head = E('div', 'display:flex;align-items:center;gap:10px;');
+    head.appendChild(E('div', 'font-weight:800;font-size:17px;letter-spacing:1px;flex:1;', 'SEASON & CAREER TOTALS'));
+    var on = flagOn();
+    var sw = E('div', on ? CHIP_ON : CHIP, on ? 'ON' : 'OFF'); sw.id = '__season_flag';
+    sw.onclick = function () { setFlag(!flagOn()); if (flagOn()) scan(); draw(); };
+    head.appendChild(sw);
+    var x = E('div', CHIP, 'CLOSE'); x.onclick = close; head.appendChild(x);
+    box.appendChild(head);
+    if (!on) {
+      box.appendChild(E('div', 'font-size:12px;color:#8b9890;margin:10px 0;line-height:1.45;', 'Off: nothing is read or written. Totals already stored are kept.'));
+      return;
+    }
+    var state = readJSON(KEY, null), store = loadStore();
+    // the pending banner: finished games the module has not been asked to count yet
+    var pl = state ? plan(state, store) : { add: [], change: [], remove: [], same: 0 };
+    var st = E('div', 'font-size:12px;color:var(--brand,#2fae4e);min-height:16px;margin:10px 0 4px;line-height:1.45;');
+    st.id = '__season_st';
+    var waiting = pl.add.length + pl.change.length + pl.remove.length;
+    st.textContent = waiting
+      ? (waiting + ' difference(s) between your finished games and these totals. Use RECALCULATE FROM GAMES to see them.')
+      : 'Totals match your finished games.';
+    box.appendChild(st);
+
+    var sports = Object.keys(store.games).reduce(function (a, k) { var s = store.games[k].sport; if (a.indexOf(s) < 0) a.push(s); return a; }, []);
+    if (ui.sport && sports.indexOf(ui.sport) < 0) ui.sport = null;
+    if (!ui.sport) ui.sport = (state && sports.indexOf(state.sport) >= 0) ? state.sport : sports[0];
+
+    var bar = E('div', 'display:flex;flex-wrap:wrap;gap:6px;margin:8px 0;');
+    sports.forEach(function (sp) {
+      var b = E('div', sp === ui.sport ? CHIP_ON : CHIP, sportName(sp).toUpperCase()); b.setAttribute('data-sp', sp);
+      b.onclick = function () { ui.sport = sp; ui.season = null; draw(); }; bar.appendChild(b);
+    });
+    var rc = E('div', CHIP + 'margin-left:auto;', 'RECALCULATE FROM GAMES'); rc.id = '__season_recalc';
+    rc.onclick = function () {
+      var s2 = readJSON(KEY, null); if (!s2) return;
+      ui.preview = plan(s2, loadStore()); draw();
+    };
+    bar.appendChild(rc);
+    box.appendChild(bar);
+
+    if (ui.preview) { box.appendChild(previewBox(ui.preview, store)); }
+
+    if (!sports.length) {
+      box.appendChild(E('div', 'font-size:13px;color:#8b9890;margin:14px 0;line-height:1.5;',
+        'Nothing counted yet. Finish a game and it is added here, or tap RECALCULATE FROM GAMES to bring in games you already finished.'));
+      return;
+    }
+    var t = totals(store, ui.sport);
+    var vbar = E('div', 'display:flex;flex-wrap:wrap;gap:6px;margin:10px 0;');
+    var seasons = t.order.slice().reverse();
+    if (!ui.season || seasons.indexOf(ui.season) < 0) ui.season = seasons[0];
+    var vs = E('div', ui.view === 'season' ? CHIP_ON : CHIP, 'SEASON'); vs.id = '__season_tab_s';
+    vs.onclick = function () { ui.view = 'season'; draw(); };
+    var vc = E('div', ui.view === 'career' ? CHIP_ON : CHIP, 'CAREER'); vc.id = '__season_tab_c';
+    vc.onclick = function () { ui.view = 'career'; draw(); };
+    vbar.appendChild(vs); vbar.appendChild(vc);
+    if (ui.view === 'season') {
+      seasons.forEach(function (lab) {
+        var b = E('div', lab === ui.season ? CHIP_ON : CHIP, lab); b.setAttribute('data-season', lab);
+        b.onclick = function () { ui.season = lab; draw(); }; vbar.appendChild(b);
+      });
+    }
+    box.appendChild(vbar);
+    var rows = ui.view === 'career' ? t.career : (t.seasons[ui.season] || {});
+    var n = ui.view === 'career' ? gameCount(store, ui.sport) : gameCount(store, ui.sport, ui.season);
+    box.appendChild(E('div', 'font-size:12px;color:#8b9890;margin:2px 0 6px;', n + ' game' + (n === 1 ? '' : 's') + ' counted'));
+    tablesFor(ui.sport).forEach(function (tb) { box.appendChild(table(tb, rows)); });
+  }
+
+  function table(tb, rows) {
+    var keys = Object.keys(rows).filter(function (k) {
+      if (!tb.title) return true;
+      if (typeof tb.any === 'function') return tb.any(rows[k].stats);
+      return tb.row(rows[k].stats).some(function (v) { return v && v !== '0' && v !== '—' && v !== '0/0' && v !== '0-0'; });
+    });
+    var wrap = E('div', 'margin:8px 0 14px;overflow-x:auto;');
+    if (tb.title) wrap.appendChild(E('div', 'font-size:11px;letter-spacing:2px;color:#8b9890;margin:10px 0 4px;', tb.title));
+    var t = E('table', 'border-collapse:collapse;width:100%;font-size:13px;');
+    t.setAttribute('data-season-table', tb.title || 'main');
+    var h = E('tr', 'color:#8b9890;font-size:11px;letter-spacing:1px;');
+    ['PLAYER', 'GP'].concat(tb.cols).forEach(function (c, i) { h.appendChild(E('th', 'text-align:' + (i ? 'right' : 'left') + ';padding:5px 8px;border-bottom:1px solid #26332b;', c)); });
+    t.appendChild(h);
+    keys.sort(function (a, b) { return String(rows[a].name || a).localeCompare(String(rows[b].name || b)); });
+    keys.forEach(function (k) {
+      var r = rows[k], tr = E('tr', ''); tr.setAttribute('data-pk', k);
+      tr.appendChild(E('td', 'padding:6px 8px;border-bottom:1px solid #1b2a20;', (r.num !== '' && r.num != null ? '#' + r.num + ' ' : '') + (r.name || '(unknown)')));
+      tr.appendChild(E('td', 'padding:6px 8px;border-bottom:1px solid #1b2a20;text-align:right;', String(r.gp)));
+      var vals; try { vals = tb.row(r.stats); } catch (e) { vals = []; }
+      tb.cols.forEach(function (c, i) { tr.appendChild(E('td', 'padding:6px 8px;border-bottom:1px solid #1b2a20;text-align:right;font-variant-numeric:tabular-nums;', vals[i] == null ? '' : String(vals[i]))); });
+      t.appendChild(tr);
+    });
+    wrap.appendChild(t);
+    if (!keys.length) wrap.appendChild(E('div', 'font-size:12px;color:#8b9890;padding:6px 2px;', 'No one yet.'));
+    return wrap;
+  }
+
+  function label(store, p, k) {
+    var e = p.want[k] || store.games[k];
+    return e ? (sportName(e.sport) + ' ' + (e.date || '?') + ' vs ' + (e.opp || '?') + ' (' + e.season + ')') : k;
+  }
+  function previewBox(p, store) {
+    var b = E('div', 'border:1px solid #e0b24d;border-radius:10px;padding:12px;margin:8px 0;font-size:12px;line-height:1.5;');
+    b.id = '__season_preview';
+    b.appendChild(E('div', 'font-weight:800;letter-spacing:1px;color:#e0b24d;margin-bottom:6px;', 'PREVIEW -- nothing is changed yet'));
+    var any = p.add.length || p.change.length || p.remove.length;
+    if (!any) b.appendChild(E('div', 'color:#cdd6cf;', 'All ' + p.same + ' finished game(s) already match. Nothing to do.'));
+    [['ADD', p.add, 'will be counted'], ['CHANGE', p.change, 'will be replaced with the game as it is now'], ['REMOVE', p.remove, 'is not in the app any more (deleted?) and will stop counting']].forEach(function (g) {
+      if (!g[1].length) return;
+      b.appendChild(E('div', 'color:#eef2ef;font-weight:700;margin-top:6px;', g[0] + ' ' + g[1].length + ' -- ' + g[2]));
+      g[1].slice(0, 12).forEach(function (k) { b.appendChild(E('div', 'color:#cdd6cf;padding-left:8px;', label(store, p, k))); });
+      if (g[1].length > 12) b.appendChild(E('div', 'color:#8b9890;padding-left:8px;', '... and ' + (g[1].length - 12) + ' more'));
+    });
+    var row = E('div', 'display:flex;gap:8px;margin-top:10px;');
+    if (any) {
+      var ap = E('div', CHIP_ON, 'APPLY'); ap.id = '__season_apply';
+      ap.onclick = function () {
+        // re-plan at the moment of the tap: the app may have moved on since the preview
+        var s2 = readJSON(KEY, null); if (!s2) return;
+        var st2 = loadStore(); var p2 = plan(s2, st2);
+        applyPlan(st2, p2, Date.now()); saveStore(st2); ui.preview = null; draw();
+      };
+      row.appendChild(ap);
+    }
+    var cn = E('div', CHIP, any ? 'CANCEL' : 'OK'); cn.id = '__season_cancel';
+    cn.onclick = function () { ui.preview = null; draw(); };
+    row.appendChild(cn);
+    b.appendChild(row);
+    return b;
+  }
+
+  function button() {
+    if (!flagButton() || document.getElementById('__season_btn')) return;
+    var b = E('div', 'position:fixed;right:10px;bottom:142px;z-index:2147483645;background:rgba(var(--brand-deep-rgb,28,122,54),.82);color:#fff;font:700 13px/1 -apple-system,Segoe UI,Roboto,sans-serif;letter-spacing:1px;padding:12px 14px;border-radius:8px;cursor:pointer;', '∑ SEASON');
+    b.id = '__season_btn'; b.onclick = open;
+    if (document.body) document.body.appendChild(b);
+  }
+  // The button stays even when the flag is OFF, so it can be turned back on.
+  function flagButton() { return true; }
+
+  var api = {
+    version: 1, flagOn: flagOn, setFlag: setFlag, pkeyOf: pkeyOf, collect: collect,
+    contribution: contribution, entryOf: entryOf, reconcile: reconcile, plan: plan, applyPlan: applyPlan,
+    totals: totals, scan: scan, loadStore: loadStore, saveStore: saveStore, emptyStore: emptyStore,
+    open: open, STORE: STORE
+  };
+  if (typeof module === 'object' && module && module.exports && typeof window === 'undefined') { module.exports = api; return; }
+  root.__rollups = api;
+
+  hook();
+  var iv = setInterval(function () { if (document.body) { button(); clearInterval(iv); } }, 300);
+  // meet the games that already exist (marks them seen), without counting any of them
+  setTimeout(function () { try { scan(); } catch (e) {} }, 1500);
+})(typeof window !== 'undefined' ? window : globalThis);
+
+/*/mod:rollups*/</script><script>(function(){function foldPlays(plays) {
   const home = {}, away = {};
   const add = (bucket, key, eff) => {
     if (key == null || key === '' || !eff) return;
