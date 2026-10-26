@@ -124,7 +124,7 @@ try{
   }
 }catch(e){}
 })();</script>
-<script>(function(){var D={brand:"#2fae4e",deep:"#1c7a36",line:"#2c4a36",fill:"#17241b"};function toHsl(h){h=String(h||"").trim();if(!/^#[0-9a-fA-F]{6}$/.test(h))return null;var r=parseInt(h.slice(1,3),16)/255,g=parseInt(h.slice(3,5),16)/255,b=parseInt(h.slice(5,7),16)/255;var mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=(mx+mn)/2,s=0,H=0;if(mx!==mn){var d=mx-mn;s=l>0.5?d/(2-mx-mn):d/(mx+mn);H=mx===r?((g-b)/d+(g<b?6:0)):mx===g?((b-r)/d+2):((r-g)/d+4);H*=60;}return [H,s*100,l*100];}function toHex(h,s,l){h=((h%360)+360)%360;s=Math.max(0,Math.min(100,s))/100;l=Math.max(0,Math.min(100,l))/100;var c=(1-Math.abs(2*l-1))*s,x=c*(1-Math.abs((h/60)%2-1)),m=l-c/2,r,g,b;if(h<60){r=c;g=x;b=0;}else if(h<120){r=x;g=c;b=0;}else if(h<180){r=0;g=c;b=x;}else if(h<240){r=0;g=x;b=c;}else if(h<300){r=x;g=0;b=c;}else{r=c;g=0;b=x;}var q=function(v){return Math.round((v+m)*255).toString(16).padStart(2,"0");};return "#"+q(r)+q(g)+q(b);}window.__brandFrom=function(hex){var a=toHsl(hex);if(!a)return null;var H=a[0],S=a[1],L=a[2];var aL=Math.max(38,Math.min(72,L));var dS=(S<=4)?S:Math.min(100,S+6);return {brand:toHex(H,S,aL),deep:toHex(H,dS,Math.max(22,Math.min(45,aL*0.67))),line:toHex(H,Math.min(25,S),23),fill:toHex(H,Math.min(22,S),12)};};function rgbTriplet(h){if(!/^#[0-9a-fA-F]{6}$/.test(String(h||"")))return null;return parseInt(h.slice(1,3),16)+","+parseInt(h.slice(3,5),16)+","+parseInt(h.slice(5,7),16);}window.__applyBrand=function(b){var r=document.documentElement,v=b||D;try{r.style.setProperty("--brand",v.brand||D.brand);r.style.setProperty("--brand-deep",v.deep||D.deep);r.style.setProperty("--brand-line",v.line||D.line);r.style.setProperty("--brand-fill",v.fill||D.fill);r.style.setProperty("--brand-rgb",rgbTriplet(v.brand||D.brand)||"47,174,78");r.style.setProperty("--brand-deep-rgb",rgbTriplet(v.deep||D.deep)||"28,122,54");}catch(e){}};try{var s=JSON.parse(localStorage.getItem("rustlers_v2")||"null");window.__applyBrand(s&&s.identity&&s.identity.brand);}catch(e){}})();</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__isVT=function(k){return /^volleyballT[0-9]*$/.test(String(k||''));};window.__vtIdx=function(k){return k==='volleyballT'?1:(parseInt(String(k).slice(11),10)||0);};window.__vtLetter=function(k){var n=window.__vtIdx(k);return (n>0&&n<=26)?String.fromCharCode(64+n):String(n);};window.__vtKeys=function(se){return Object.keys(se||{}).filter(window.__isVT).sort(function(a,b){return window.__vtIdx(a)-window.__vtIdx(b);});};window.__APP_BUILD=parseInt("205",10)||0;window.__APP_VERSION=(function(v){return /^[0-9]+\.[0-9]+\.[0-9]+$/.test(v)?v:'';})("2.13.0");</script><script>(function(){var MAX=192;window.__logoFrom=function(file,cb){try{if(!file||String(file.type||"").indexOf("image/")!==0){cb(null,"That file is not an image.");return;}var fr=new FileReader();fr.onerror=function(){cb(null,"That file could not be read.");};fr.onload=function(){var img=new Image();img.onerror=function(){cb(null,"That file could not be read as an image.");};img.onload=function(){try{var w=img.naturalWidth||img.width||MAX,h=img.naturalHeight||img.height||MAX;var sc=Math.min(1,MAX/Math.max(w,h));var cw=Math.max(1,Math.round(w*sc)),ch=Math.max(1,Math.round(h*sc));var c=document.createElement("canvas");c.width=cw;c.height=ch;var x=c.getContext("2d");if(!x){cb(null,"This device cannot resize images.");return;}x.drawImage(img,0,0,cw,ch);cb(c.toDataURL("image/png"),null);}catch(e){cb(null,"That image could not be resized.");}};img.src=fr.result;};fr.readAsDataURL(file);}catch(e){cb(null,"That file could not be read.");}};})();</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:var(--brand-deep);color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:var(--brand-deep);border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var _w0=window.innerWidth||document.documentElement.clientWidth;var MIN=parseInt(localStorage.getItem(_w0>=1000?"rustlers_zoom_wide":"rustlers_zoom_min"),10);var usr=!!MIN&&MIN>=400&&MIN<=3200;if(!usr)MIN=(_w0<700?600:_w0<1000?900:1180);var w=_w0;var z=usr?(Math.abs(w-MIN)<2?0:w/MIN):(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
+<script>(function(){var D={brand:"#2fae4e",deep:"#1c7a36",line:"#2c4a36",fill:"#17241b"};function toHsl(h){h=String(h||"").trim();if(!/^#[0-9a-fA-F]{6}$/.test(h))return null;var r=parseInt(h.slice(1,3),16)/255,g=parseInt(h.slice(3,5),16)/255,b=parseInt(h.slice(5,7),16)/255;var mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=(mx+mn)/2,s=0,H=0;if(mx!==mn){var d=mx-mn;s=l>0.5?d/(2-mx-mn):d/(mx+mn);H=mx===r?((g-b)/d+(g<b?6:0)):mx===g?((b-r)/d+2):((r-g)/d+4);H*=60;}return [H,s*100,l*100];}function toHex(h,s,l){h=((h%360)+360)%360;s=Math.max(0,Math.min(100,s))/100;l=Math.max(0,Math.min(100,l))/100;var c=(1-Math.abs(2*l-1))*s,x=c*(1-Math.abs((h/60)%2-1)),m=l-c/2,r,g,b;if(h<60){r=c;g=x;b=0;}else if(h<120){r=x;g=c;b=0;}else if(h<180){r=0;g=c;b=x;}else if(h<240){r=0;g=x;b=c;}else if(h<300){r=x;g=0;b=c;}else{r=c;g=0;b=x;}var q=function(v){return Math.round((v+m)*255).toString(16).padStart(2,"0");};return "#"+q(r)+q(g)+q(b);}window.__brandFrom=function(hex){var a=toHsl(hex);if(!a)return null;var H=a[0],S=a[1],L=a[2];var aL=Math.max(38,Math.min(72,L));var dS=(S<=4)?S:Math.min(100,S+6);return {brand:toHex(H,S,aL),deep:toHex(H,dS,Math.max(22,Math.min(45,aL*0.67))),line:toHex(H,Math.min(25,S),23),fill:toHex(H,Math.min(22,S),12)};};function rgbTriplet(h){if(!/^#[0-9a-fA-F]{6}$/.test(String(h||"")))return null;return parseInt(h.slice(1,3),16)+","+parseInt(h.slice(3,5),16)+","+parseInt(h.slice(5,7),16);}window.__applyBrand=function(b){var r=document.documentElement,v=b||D;try{r.style.setProperty("--brand",v.brand||D.brand);r.style.setProperty("--brand-deep",v.deep||D.deep);r.style.setProperty("--brand-line",v.line||D.line);r.style.setProperty("--brand-fill",v.fill||D.fill);r.style.setProperty("--brand-rgb",rgbTriplet(v.brand||D.brand)||"47,174,78");r.style.setProperty("--brand-deep-rgb",rgbTriplet(v.deep||D.deep)||"28,122,54");}catch(e){}};try{var s=JSON.parse(localStorage.getItem("rustlers_v2")||"null");window.__applyBrand(s&&s.identity&&s.identity.brand);}catch(e){}})();</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__isVT=function(k){return /^volleyballT[0-9]*$/.test(String(k||''));};window.__vtIdx=function(k){return k==='volleyballT'?1:(parseInt(String(k).slice(11),10)||0);};window.__vtLetter=function(k){var n=window.__vtIdx(k);return (n>0&&n<=26)?String.fromCharCode(64+n):String(n);};window.__vtKeys=function(se){return Object.keys(se||{}).filter(window.__isVT).sort(function(a,b){return window.__vtIdx(a)-window.__vtIdx(b);});};window.__APP_BUILD=parseInt("206",10)||0;window.__APP_VERSION=(function(v){return /^[0-9]+\.[0-9]+\.[0-9]+$/.test(v)?v:'';})("2.14.0");</script><script>(function(){var MAX=192;window.__logoFrom=function(file,cb){try{if(!file||String(file.type||"").indexOf("image/")!==0){cb(null,"That file is not an image.");return;}var fr=new FileReader();fr.onerror=function(){cb(null,"That file could not be read.");};fr.onload=function(){var img=new Image();img.onerror=function(){cb(null,"That file could not be read as an image.");};img.onload=function(){try{var w=img.naturalWidth||img.width||MAX,h=img.naturalHeight||img.height||MAX;var sc=Math.min(1,MAX/Math.max(w,h));var cw=Math.max(1,Math.round(w*sc)),ch=Math.max(1,Math.round(h*sc));var c=document.createElement("canvas");c.width=cw;c.height=ch;var x=c.getContext("2d");if(!x){cb(null,"This device cannot resize images.");return;}x.drawImage(img,0,0,cw,ch);cb(c.toDataURL("image/png"),null);}catch(e){cb(null,"That image could not be resized.");}};img.src=fr.result;};fr.readAsDataURL(file);}catch(e){cb(null,"That file could not be read.");}};})();</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:var(--brand-deep);color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:var(--brand-deep);border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var _w0=window.innerWidth||document.documentElement.clientWidth;var MIN=parseInt(localStorage.getItem(_w0>=1000?"rustlers_zoom_wide":"rustlers_zoom_min"),10);var usr=!!MIN&&MIN>=400&&MIN<=3200;if(!usr)MIN=(_w0<700?600:_w0<1000?900:1180);var w=_w0;var z=usr?(Math.abs(w-MIN)<2?0:w/MIN):(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
 function E(t,c,x){var e=document.createElement(t);if(c)e.style.cssText=c;if(x!=null)e.textContent=x;return e;}
 function panel(){if(document.getElementById('__bk_ov'))return;
 var ov=E('div','position:fixed;inset:0;z-index:2147483646;background:rgba(6,9,7,.92);display:flex;align-items:center;justify-content:center;padding:20px;');ov.id='__bk_ov';
@@ -321,7 +321,7 @@ function mark(){
 // VOICE / zoom / BACKUP / version / SYNC used to be five fixed boxes stacked up the right edge, sitting on
 // top of buttons and, on a tablet, on the CLEAR button of the selected-player bar. They now live in one
 // small handle; its dot is the sync status, and the rest open on a tap.
-var SECOND=['__voice_toggle','__zoom_ctl','__bk_btn','__cal_btn','__cal_now','__clear_btn','__restart_btn','__season_btn','__ver_lbl'];
+var SECOND=['__voice_toggle','__zoom_ctl','__bk_btn','__cal_btn','__cal_now','__clear_btn','__restart_btn','__season_btn','__ssync_btn','__ver_lbl'];
 function flat(el){ el.style.position='static'; el.style.right='auto'; el.style.bottom='auto'; el.style.left='auto'; el.style.top='auto'; el.style.margin='0'; el.style.zIndex='auto'; }
 function dock(){
   var d=document.getElementById('__dock'), more, row, hd, dot;
@@ -5226,7 +5226,8 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
       else if (sigOf(want[k]) !== sigOf(stripTimes(held))) p.change.push(k);
       else p.same++;
     });
-    Object.keys(store.games).forEach(function (k) { if (!want[k]) p.remove.push(k); });
+    // entries that came from another device (statsync) have no game here to compare with: not orphans
+    Object.keys(store.games).forEach(function (k) { if (!want[k] && !store.games[k].remote) p.remove.push(k); });
     return p;
   }
   function applyPlan(store, p, now) {
@@ -5494,7 +5495,455 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
   setTimeout(function () { try { scan(); } catch (e) {} }, 1500);
 })(typeof window !== 'undefined' ? window : globalThis);
 
-/*/mod:rollups*/</script><script>(function(){function foldPlays(plays) {
+/*/mod:rollups*/</script><script>/*mod:statsync*/
+/*
+ * statsync/statsync.js -- keep season totals the same on every device you own.
+ *
+ * Phase 2 of the stats work, and like phase 1 it sits OUTSIDE the app: it reads
+ * the rollups store (rustlers_rollups, written by season/rollups.js), talks to
+ * the relay you already run (sync/worker, the /s/ routes), and keeps its own
+ * state in rustlers_statsync. It never touches rustlers_v2. Delete its block
+ * from www/index.html (and '__ssync_btn' from SECOND) and nothing else changes.
+ *
+ * OFFLINE FIRST. Everything is written locally first. The "queue" is not a list
+ * that can be lost: it is DERIVED, every time, by comparing the rollups store
+ * with what this device last pushed (cfg.pushed). A game whose entry is new or
+ * changed is pending; a game that was pushed and is now gone is a pending
+ * delete. Offline, or the relay down, nothing is lost -- it is still different,
+ * so it is still pending, and the next try sends it.
+ *
+ * ONE RULE FOR CONFLICTS: last write wins, per game. Every entry carries
+ * updatedAt (u); the relay keeps the largest u for a game. The losing side is
+ * written to the conflict log with both numbers, so a surprise can be explained.
+ *
+ * NO SILENT MERGES. A pull never touches your totals. What comes down is STAGED
+ * (cfg.incoming); the panel lists it, and MERGE shows a preview (add / replace /
+ * remove) that changes nothing until APPLY.
+ *
+ * THE SAME GAME UNDER TWO IDS. Two devices scoring one game mint different game
+ * ids, so each would count it. Games are matched by sport + date + opponent as
+ * well; two ids for one game is a conflict (logged), settled by last write wins
+ * like any other, and it is never counted twice.
+ *
+ * Needs a stats code, the same on each device (GENERATE on one, type it on the
+ * others). Like the live-game code, it is the only gate: long and random.
+ */
+(function (root) {
+  var CFG = 'rustlers_statsync';
+  var LIVECFG = 'rustlers_sync';          // sync.js's key; only its optional `host` override is read
+  var FLAGS = 'rustlers_flags';
+  var FLAG = 'statsync';
+  var HOST = 'https://rustlers-sync.adam-bertsch97.workers.dev';
+  var TIMEOUT = 8000;
+  var DEBOUNCE = 2000;
+  var RETRY = 30000;
+  var OVERLAP = 5000;                     // pull a little before `since`; applying is idempotent
+
+  function readJSON(k, d) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }
+  function writeJSON(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } }
+
+  function flagOn() { return readJSON(FLAGS, {})[FLAG] !== false; }
+  function setFlag(on) { var f = readJSON(FLAGS, {}); f[FLAG] = !!on; writeJSON(FLAGS, f); }
+
+  function loadCfg() {
+    var c = readJSON(CFG, null);
+    if (!c || typeof c !== 'object') c = {};
+    c.v = 1;
+    if (!c.dev) c.dev = 'd' + Math.random().toString(36).slice(2, 10);
+    if (typeof c.code !== 'string') c.code = '';
+    ['pushed', 'incoming', 'dismissed', 'tombs'].forEach(function (k) { if (!c[k]) c[k] = {}; });
+    if (!c.conflicts) c.conflicts = [];
+    if (!c.since) c.since = 0;
+    return c;
+  }
+  function saveCfg(c) { return writeJSON(CFG, c); }
+  function host() { var h = (readJSON(LIVECFG, {}) || {}).host; return String(h || HOST).replace(/\/+$/, ''); }
+  function R() { return root.__rollups; }
+
+  function logConflict(c, o) {
+    // the same conflict is re-evaluated on every sync; say it once
+    for (var i = 0; i < c.conflicts.length; i++) {
+      var k = c.conflicts[i];
+      if (k.key === o.key && k.kind === o.kind && k.resolution === o.resolution && k.localU === o.localU && k.remoteU === o.remoteU) return;
+    }
+    o.t = Date.now();
+    c.conflicts.push(o);
+    if (c.conflicts.length > 50) c.conflicts.splice(0, c.conflicts.length - 50);
+  }
+
+  // ---- the derived queue ----------------------------------------------------
+  function uOf(e) { return e.updatedAt || e.at || 0; }
+  function pending(store, c) {
+    var out = [];
+    Object.keys(store.games).forEach(function (k) {
+      var e = store.games[k], p = c.pushed[k];
+      if (!p || p.d || p.u !== uOf(e)) out.push({ key: k, kind: 'put', u: uOf(e), entry: e });
+    });
+    Object.keys(c.pushed).forEach(function (k) {
+      if (!c.pushed[k].d && !store.games[k]) {
+        if (!c.tombs[k]) c.tombs[k] = Date.now();     // fixed once, so retries send the same u
+        out.push({ key: k, kind: 'del', u: c.tombs[k] });
+      }
+    });
+    return out;
+  }
+
+  function natKey(e) {
+    return [e.sport, String(e.date || '').trim(), String(e.opp || '').toLowerCase().replace(/[^a-z0-9]/g, '')].join('|');
+  }
+  function findTwin(store, key, entry) {
+    var nk = natKey(entry), hit = null;
+    Object.keys(store.games).forEach(function (k) {
+      if (k !== key && !hit && natKey(store.games[k]) === nk) hit = k;
+    });
+    return hit;
+  }
+
+  // ---- staging what came down (changes nothing in the totals) ---------------
+  // Returns the staged count. `recs`: [{key,u,deleted,entry}]
+  function stage(c, store, recs) {
+    recs.forEach(function (r) {
+      var local = store.games[r.key], p = c.pushed[r.key];
+      if (c.dismissed[r.key] === r.u) return;
+      var lu = local ? uOf(local) : 0;
+      if (local && lu === r.u) { c.pushed[r.key] = { u: r.u, d: 0 }; delete c.incoming[r.key]; return; }      // already identical
+      if (r.deleted) {
+        if (!local) { c.pushed[r.key] = { u: r.u, d: 1 }; delete c.incoming[r.key]; return; }
+        if (lu > r.u) { logConflict(c, { key: r.key, kind: 'deleted-elsewhere', resolution: 'local newer, kept', localU: lu, remoteU: r.u }); c.dismissed[r.key] = r.u; return; }
+        c.incoming[r.key] = { u: r.u, deleted: true, entry: null }; return;
+      }
+      if (local) {
+        if (lu > r.u) { logConflict(c, { key: r.key, kind: 'edited-both', resolution: 'local newer, kept', localU: lu, remoteU: r.u }); c.dismissed[r.key] = r.u; return; }
+        if (p && !p.d && p.u !== lu) logConflict(c, { key: r.key, kind: 'edited-both', resolution: 'remote newer, staged for preview', localU: lu, remoteU: r.u });
+        c.incoming[r.key] = { u: r.u, deleted: false, entry: r.entry }; return;
+      }
+      var twin = findTwin(store, r.key, r.entry);
+      if (twin) {
+        var tu = uOf(store.games[twin]);
+        if (tu >= r.u) { logConflict(c, { key: r.key, kind: 'same-game-two-ids', twin: twin, resolution: 'local newer, kept ' + twin, localU: tu, remoteU: r.u }); c.dismissed[r.key] = r.u; return; }
+        logConflict(c, { key: r.key, kind: 'same-game-two-ids', twin: twin, resolution: 'remote newer, staged to replace ' + twin, localU: tu, remoteU: r.u });
+        c.incoming[r.key] = { u: r.u, deleted: false, entry: r.entry, replaces: twin }; return;
+      }
+      c.incoming[r.key] = { u: r.u, deleted: false, entry: r.entry };
+    });
+    return Object.keys(c.incoming).length;
+  }
+
+  // What is staged was judged against the totals as they were THEN. Judge it again against the totals now: a game
+  // finished here since the pull may be the very game that came down under another id.
+  function restage(c, store) {
+    var recs = Object.keys(c.incoming).map(function (k) {
+      var i = c.incoming[k]; return { key: k, u: i.u, deleted: i.deleted, entry: i.entry };
+    });
+    c.incoming = {};
+    return stage(c, store, recs);
+  }
+
+  function preview(c, store) {
+    var out = { add: [], replace: [], remove: [], swap: [] };
+    Object.keys(c.incoming).forEach(function (k) {
+      var i = c.incoming[k];
+      if (i.deleted) { if (store.games[k]) out.remove.push(k); return; }
+      if (i.replaces) out.swap.push(k);
+      else if (store.games[k]) out.replace.push(k);
+      else out.add.push(k);
+    });
+    return out;
+  }
+  // The user pressed APPLY. Writes the rollups store; marks everything applied as "already pushed",
+  // so merging does not bounce the same game back to the relay.
+  function applyIncoming(c, store) {
+    var n = 0;
+    restage(c, store);
+    Object.keys(c.incoming).forEach(function (k) {
+      var i = c.incoming[k];
+      if (i.deleted) {
+        if (store.games[k]) { delete store.games[k]; n++; }
+        c.pushed[k] = { u: i.u, d: 1 };
+      } else {
+        if (i.replaces && store.games[i.replaces]) { delete store.games[i.replaces]; }   // a pending delete for it is pushed later
+        var e = JSON.parse(JSON.stringify(i.entry));
+        e.remote = true; e.updatedAt = i.u;
+        store.games[k] = e; c.pushed[k] = { u: i.u, d: 0 }; n++;
+      }
+      delete c.tombs[k];
+    });
+    c.incoming = {};
+    return n;
+  }
+
+  // ---- network ---------------------------------------------------------------
+  function call(method, path, body) {
+    var ctl = (typeof AbortController !== 'undefined') ? new AbortController() : null;
+    var t = setTimeout(function () { if (ctl) ctl.abort(); }, TIMEOUT);
+    return fetch(host() + path, {
+      method: method, signal: ctl ? ctl.signal : undefined,
+      headers: body ? { 'Content-Type': 'application/json' } : undefined,
+      body: body ? JSON.stringify(body) : undefined
+    }).then(function (r) {
+      clearTimeout(t);
+      if (!r.ok) throw new Error('relay answered ' + r.status);
+      return r.json();
+    }, function (e) { clearTimeout(t); throw e; });
+  }
+
+  var inflight = false;
+  var live = { phase: 'idle' };           // transient: 'syncing'
+  function online() { return typeof navigator === 'undefined' || navigator.onLine !== false; }
+
+  // pull, then push. Resolves {ok, pulled, pushed, error}.
+  function sync() {
+    if (!flagOn() || !R()) return Promise.resolve({ ok: false, skipped: 'off' });
+    var c = loadCfg();
+    if (!c.code) return Promise.resolve({ ok: false, skipped: 'no code' });
+    if (inflight) return Promise.resolve({ ok: false, skipped: 'busy' });
+    if (!online()) { c.lastTryAt = Date.now(); c.offline = true; saveCfg(c); paint(); return Promise.resolve({ ok: false, skipped: 'offline' }); }
+    inflight = true; live.phase = 'syncing'; paint();
+    var res = { ok: true, pulled: 0, pushed: 0 };
+    var code = encodeURIComponent(c.code);
+    return call('GET', '/s/' + code + '?since=' + Math.max(0, c.since - OVERLAP)).then(function (d) {
+      var cc = loadCfg(), store = R().loadStore();
+      res.pulled = (d.games || []).length;
+      stage(cc, store, d.games || []);
+      restage(cc, store);
+      cc.since = d.now || cc.since;
+      saveCfg(cc);
+      return pushAll();
+    }).then(function (n) {
+      res.pushed = n;
+      var cc = loadCfg(); cc.lastOkAt = Date.now(); cc.lastTryAt = cc.lastOkAt; cc.lastErr = ''; cc.offline = false; saveCfg(cc);
+    }).catch(function (e) {
+      res.ok = false; res.error = String((e && e.message) || e);
+      var cc = loadCfg(); cc.lastTryAt = Date.now(); cc.lastErr = res.error; cc.offline = !online(); saveCfg(cc);
+    }).then(function () { inflight = false; live.phase = 'idle'; paint(); return res; });
+  }
+
+  // Sequential: a relay failing half way leaves the rest still pending.
+  function pushAll() {
+    var store = R().loadStore(), c = loadCfg();
+    // a game the relay already told us it holds a NEWER copy of is not sent again: the preview decides it
+    var q = pending(store, c).filter(function (it) { var i = c.incoming[it.key]; return !(i && i.u > it.u); });
+    saveCfg(c);                                           // keeps freshly fixed tombstone times
+    var done = 0;
+    return q.reduce(function (p, it) {
+      return p.then(function () {
+        var body = it.kind === 'del' ? { u: it.u, deleted: true } : { u: it.u, entry: stripLocal(it.entry) };
+        return call('POST', '/s/' + encodeURIComponent(loadCfg().code) + '/' + encodeURIComponent(it.key), body).then(function (r) {
+          var cc = loadCfg();
+          if (r.stored) {
+            if (r.prev != null && (!cc.pushed[it.key] || cc.pushed[it.key].u !== r.prev) && r.prev !== it.u) {
+              logConflict(cc, { key: it.key, kind: 'edited-both', resolution: 'local newer, replaced the relay copy', localU: it.u, remoteU: r.prev });
+            }
+            cc.pushed[it.key] = { u: it.u, d: it.kind === 'del' ? 1 : 0 };
+            if (it.kind === 'del') delete cc.tombs[it.key];
+            done++;
+          } else if (r.current) {
+            // the relay holds something newer: it wins. Stage it (the preview decides) and stop re-sending ours.
+            logConflict(cc, { key: it.key, kind: 'edited-both', resolution: 'relay newer, staged for preview', localU: it.u, remoteU: r.current.u });
+            var st = R().loadStore();
+            stage(cc, st, [{ key: it.key, u: r.current.u, deleted: r.current.deleted, entry: r.current.entry }]);
+            cc.pushed[it.key] = { u: it.u, d: it.kind === 'del' ? 1 : 0 };
+          }
+          saveCfg(cc);
+        });
+      });
+    }, Promise.resolve()).then(function () { return done; });
+  }
+  function stripLocal(e) {
+    var o = JSON.parse(JSON.stringify(e)); delete o.remote; return o;
+  }
+
+  // ---- status ----------------------------------------------------------------
+  // synced | pending | failed | off, plus how many wait to be sent / merged
+  function status() {
+    var c = loadCfg();
+    var s = { state: 'off', pending: 0, waiting: Object.keys(c.incoming).length, error: c.lastErr || '', lastOkAt: c.lastOkAt || 0, offline: false };
+    if (!flagOn() || !c.code || !R()) return s;
+    var q = pending(R().loadStore(), c);
+    s.pending = q.length;
+    s.offline = !online() || !!c.offline;
+    if (live.phase === 'syncing') s.state = 'syncing';
+    else if (c.lastErr && !s.offline) s.state = 'failed';
+    else if (s.pending > 0 || s.offline) s.state = 'pending';
+    else s.state = 'synced';
+    return s;
+  }
+
+  // ---- driver ----------------------------------------------------------------
+  var timer = null;
+  function schedule() {
+    if (timer) return;
+    timer = setTimeout(function () { timer = null; sync(); paint(); }, DEBOUNCE);
+  }
+  function hook() {
+    try {
+      var proto = Object.getPrototypeOf(localStorage), orig = proto.setItem;
+      if (orig.__ssHooked) return;
+      var w = function (k, v) {
+        var r = orig.apply(this, arguments);
+        if (k === 'rustlers_rollups' && this === localStorage) { schedule(); paintSoon(); }
+        return r;
+      };
+      w.__ssHooked = true; proto.setItem = w;
+    } catch (e) {}
+  }
+
+  // ---- UI ----------------------------------------------------------------------
+  function E(t, c, x) { var e = document.createElement(t); if (c) e.style.cssText = c; if (x != null) e.textContent = x; return e; }
+  var COL = { synced: '#2fae4e', pending: '#e0b24d', failed: '#e0574d', syncing: '#7fb3e0', off: '#7d8a82' };
+  var CHIP = 'padding:7px 11px;border-radius:8px;border:1px solid var(--brand-line,#2c4a36);background:#131b15;color:#cdd6cf;font-weight:800;font-size:12px;letter-spacing:1px;cursor:pointer;';
+  var CHIP_ON = CHIP.replace('background:#131b15', 'background:var(--brand-deep,#1c7a36)').replace('color:#cdd6cf', 'color:#fff');
+  var ui = { preview: false };
+
+  function label(s) {
+    var t = s.state === 'off' ? 'OFF' : s.state.toUpperCase();
+    if (s.state === 'pending' && s.offline) t = 'OFFLINE';
+    if (s.pending) t += ' ' + s.pending;
+    if (s.waiting) t += ' · ' + s.waiting + ' WAITING';
+    return t;
+  }
+  var paintT = null;
+  function paintSoon() { if (paintT) return; paintT = setTimeout(function () { paintT = null; paint(); }, 100); }
+  function paint() {
+    var b = document.getElementById('__ssync_btn');
+    if (b) {
+      var s = status();
+      var want = '☁ STATS: ' + label(s);
+      if (b.textContent !== want) b.textContent = want;
+      b.style.color = COL[s.state] || '#fff';
+      b.setAttribute('data-state', s.state);
+    }
+    if (document.getElementById('__ssync_ov')) draw();
+  }
+  function button() {
+    if (document.getElementById('__ssync_btn')) return;
+    var b = E('div', 'position:fixed;right:10px;bottom:176px;z-index:2147483645;background:rgba(10,16,12,.9);border:1px solid var(--brand-line,#2c4a36);font:700 13px/1 -apple-system,Segoe UI,Roboto,sans-serif;letter-spacing:1px;padding:12px 14px;border-radius:8px;cursor:pointer;', '☁ STATS');
+    b.id = '__ssync_btn'; b.onclick = open;
+    if (document.body) { document.body.appendChild(b); paint(); }
+  }
+  function close() { var o = document.getElementById('__ssync_ov'); if (o) o.remove(); ui.preview = false; }
+  function open() {
+    close();
+    var ov = E('div', 'position:fixed;inset:0;z-index:2147483646;background:rgba(6,9,7,.92);display:flex;align-items:flex-start;justify-content:center;padding:14px;overflow:auto;');
+    ov.id = '__ssync_ov';
+    ov.addEventListener('click', function (e) { if (e.target === ov) close(); });
+    document.body.appendChild(ov);
+    draw();
+  }
+  function newCode() {
+    var a = 'abcdefghjkmnpqrstuvwxyz23456789', s = '';
+    var buf = (root.crypto && root.crypto.getRandomValues) ? root.crypto.getRandomValues(new Uint8Array(24)) : null;
+    for (var i = 0; i < 24; i++) s += a[(buf ? buf[i] : Math.floor(Math.random() * 256)) % a.length];
+    return s;
+  }
+  function draw() {
+    var ov = document.getElementById('__ssync_ov'); if (!ov) return;
+    var keepCode = document.getElementById('__ssync_code');
+    var typed = keepCode ? keepCode.value : null;
+    while (ov.firstChild) ov.removeChild(ov.firstChild);
+    var box = E('div', 'background:#131b15;border:1px solid #26332b;border-radius:14px;max-width:640px;width:100%;padding:18px;color:#eef2ef;font-family:-apple-system,Segoe UI,Roboto,sans-serif;box-sizing:border-box;');
+    ov.appendChild(box);
+    var c = loadCfg(), s = status(), on = flagOn();
+    var head = E('div', 'display:flex;align-items:center;gap:10px;');
+    head.appendChild(E('div', 'font-weight:800;font-size:17px;letter-spacing:1px;flex:1;', 'STATS SYNC'));
+    var sw = E('div', on ? CHIP_ON : CHIP, on ? 'ON' : 'OFF'); sw.id = '__ssync_flag';
+    sw.onclick = function () { setFlag(!flagOn()); if (flagOn()) sync(); paint(); };
+    head.appendChild(sw);
+    var x = E('div', CHIP, 'CLOSE'); x.onclick = close; head.appendChild(x);
+    box.appendChild(head);
+    box.appendChild(E('div', 'font-size:12px;color:#8b9890;line-height:1.45;margin:8px 0 12px;',
+      'Keeps season totals the same on your devices. Everything is saved here first; if there is no signal it waits and sends later. Nothing in your totals changes until you preview and merge.'));
+    if (!on) { box.appendChild(E('div', 'font-size:12px;color:#8b9890;', 'Off: nothing is sent or received.')); return; }
+
+    var st = E('div', 'font-size:14px;font-weight:800;letter-spacing:1px;margin:6px 0;color:' + (COL[s.state] || '#fff'), label(s));
+    st.id = '__ssync_st'; box.appendChild(st);
+    var det = [];
+    if (s.lastOkAt) det.push('last synced ' + new Date(s.lastOkAt).toLocaleString());
+    if (s.error) det.push('last error: ' + s.error);
+    if (det.length) box.appendChild(E('div', 'font-size:12px;color:#8b9890;margin-bottom:8px;line-height:1.45;', det.join(' · ')));
+
+    box.appendChild(E('div', 'font-size:11px;letter-spacing:2px;color:#8b9890;margin:12px 0 6px;', 'STATS CODE (the same on every device)'));
+    var row = E('div', 'display:flex;gap:8px;flex-wrap:wrap;');
+    var inp = E('input', 'flex:1;min-width:200px;padding:10px;border-radius:8px;border:1px solid #26332b;background:#0d1611;color:#eef2ef;font:14px ui-monospace,monospace;');
+    inp.id = '__ssync_code'; inp.value = typed != null ? typed : c.code; inp.setAttribute('autocomplete', 'off'); inp.setAttribute('autocapitalize', 'off');
+    row.appendChild(inp);
+    var gen = E('div', CHIP, 'GENERATE'); gen.id = '__ssync_gen'; gen.onclick = function () { inp.value = newCode(); };
+    var save = E('div', CHIP_ON, 'SAVE CODE'); save.id = '__ssync_save';
+    save.onclick = function () {
+      var v = String(inp.value || '').trim();
+      if (v && !/^[A-Za-z0-9_-]{8,64}$/.test(v)) { alert('A code is 8 to 64 letters, digits, - or _'); return; }
+      var cc = loadCfg();
+      if (v !== cc.code) { cc.code = v; cc.since = 0; cc.pushed = {}; cc.incoming = {}; cc.dismissed = {}; cc.tombs = {}; cc.lastErr = ''; saveCfg(cc); }
+      if (v) sync(); paint();
+    };
+    row.appendChild(gen); row.appendChild(save);
+    box.appendChild(row);
+    box.appendChild(E('div', 'font-size:11px;color:#8b9890;margin-top:6px;line-height:1.4;', 'Anyone with this code can read and add season stats, so keep it to yourself. Changing it starts fresh against the new code.'));
+
+    var now = E('div', CHIP + 'display:inline-block;margin:14px 0 4px;', 'SYNC NOW'); now.id = '__ssync_now';
+    now.onclick = function () { sync().then(paint); };
+    box.appendChild(now);
+
+    var store = R() ? R().loadStore() : { games: {} };
+    restage(c, store);
+    var pv = preview(c, store);
+    var nWait = pv.add.length + pv.replace.length + pv.remove.length + pv.swap.length;
+    if (nWait) {
+      box.appendChild(E('div', 'font-size:11px;letter-spacing:2px;color:#e0b24d;margin:14px 0 6px;', nWait + ' GAME(S) WAITING FROM ANOTHER DEVICE'));
+      if (!ui.preview) {
+        var pb = E('div', CHIP_ON + 'display:inline-block;', 'PREVIEW & MERGE'); pb.id = '__ssync_preview_btn';
+        pb.onclick = function () { ui.preview = true; draw(); };
+        box.appendChild(pb);
+      } else box.appendChild(previewBox(c, store, pv));
+    }
+
+    if (c.conflicts.length) {
+      box.appendChild(E('div', 'font-size:11px;letter-spacing:2px;color:#8b9890;margin:14px 0 6px;', 'CONFLICT LOG (last write wins)'));
+      var lg = E('div', 'font-size:12px;line-height:1.5;color:#cdd6cf;max-height:180px;overflow:auto;'); lg.id = '__ssync_log';
+      c.conflicts.slice(-20).reverse().forEach(function (k) {
+        lg.appendChild(E('div', 'padding:3px 0;border-bottom:1px solid #1b2a20;', new Date(k.t).toLocaleString() + ' · ' + k.kind + ' · ' + k.key + ' → ' + k.resolution));
+      });
+      box.appendChild(lg);
+    }
+  }
+  function nameOf(store, k, i) {
+    var e = (i && i.entry) || store.games[k];
+    return e ? (e.date || '?') + ' vs ' + (e.opp || '?') + ' (' + e.sport + ', ' + e.season + ')' : k;
+  }
+  function previewBox(c, store, pv) {
+    var b = E('div', 'border:1px solid #e0b24d;border-radius:10px;padding:12px;margin:8px 0;font-size:12px;line-height:1.5;'); b.id = '__ssync_preview';
+    b.appendChild(E('div', 'font-weight:800;letter-spacing:1px;color:#e0b24d;margin-bottom:6px;', 'PREVIEW -- nothing is changed yet'));
+    [['ADD', pv.add, 'new here'], ['REPLACE', pv.replace, 'the other device has a newer copy'], ['SWAP', pv.swap, 'same game as one you already have (different id); the newer copy replaces it'], ['REMOVE', pv.remove, 'deleted on another device']].forEach(function (g) {
+      if (!g[1].length) return;
+      b.appendChild(E('div', 'color:#eef2ef;font-weight:700;margin-top:6px;', g[0] + ' ' + g[1].length + ' -- ' + g[2]));
+      g[1].slice(0, 12).forEach(function (k) { b.appendChild(E('div', 'color:#cdd6cf;padding-left:8px;', nameOf(store, k, c.incoming[k]))); });
+    });
+    var row = E('div', 'display:flex;gap:8px;margin-top:10px;');
+    var ap = E('div', CHIP_ON, 'APPLY'); ap.id = '__ssync_apply';
+    ap.onclick = function () {
+      var cc = loadCfg(), st = R().loadStore();
+      applyIncoming(cc, st); R().saveStore(st); saveCfg(cc); ui.preview = false; draw(); paint();
+    };
+    var cn = E('div', CHIP, 'CANCEL'); cn.id = '__ssync_cancel'; cn.onclick = function () { ui.preview = false; draw(); };
+    row.appendChild(ap); row.appendChild(cn); b.appendChild(row);
+    return b;
+  }
+
+  var api = {
+    version: 1, flagOn: flagOn, setFlag: setFlag, loadCfg: loadCfg, saveCfg: saveCfg, pending: pending, stage: stage,
+    preview: preview, restage: restage, applyIncoming: applyIncoming, sync: sync, status: status, natKey: natKey, open: open, paint: paint
+  };
+  if (typeof module === 'object' && module && module.exports && typeof window === 'undefined') { module.exports = api; return; }
+  root.__statsync = api;
+
+  hook();
+  var iv = setInterval(function () { if (document.body) { button(); clearInterval(iv); } }, 300);
+  setTimeout(function () { sync(); }, 3500);                          // pull on open
+  setInterval(function () { var s = status(); if (s.state === 'pending' || s.state === 'failed') sync(); paint(); }, RETRY);
+  try { root.addEventListener('online', function () { sync(); }); root.addEventListener('offline', paint); } catch (e) {}
+})(typeof window !== 'undefined' ? window : globalThis);
+
+/*/mod:statsync*/</script><script>(function(){function foldPlays(plays) {
   const home = {}, away = {};
   const add = (bucket, key, eff) => {
     if (key == null || key === '' || !eff) return;
