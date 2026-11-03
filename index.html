@@ -143,7 +143,7 @@ try{
   }
 }catch(e){}
 })();</script>
-<script>(function(){var D={brand:"#2fae4e",deep:"#1c7a36",line:"#2c4a36",fill:"#17241b"};function toHsl(h){h=String(h||"").trim();if(!/^#[0-9a-fA-F]{6}$/.test(h))return null;var r=parseInt(h.slice(1,3),16)/255,g=parseInt(h.slice(3,5),16)/255,b=parseInt(h.slice(5,7),16)/255;var mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=(mx+mn)/2,s=0,H=0;if(mx!==mn){var d=mx-mn;s=l>0.5?d/(2-mx-mn):d/(mx+mn);H=mx===r?((g-b)/d+(g<b?6:0)):mx===g?((b-r)/d+2):((r-g)/d+4);H*=60;}return [H,s*100,l*100];}function toHex(h,s,l){h=((h%360)+360)%360;s=Math.max(0,Math.min(100,s))/100;l=Math.max(0,Math.min(100,l))/100;var c=(1-Math.abs(2*l-1))*s,x=c*(1-Math.abs((h/60)%2-1)),m=l-c/2,r,g,b;if(h<60){r=c;g=x;b=0;}else if(h<120){r=x;g=c;b=0;}else if(h<180){r=0;g=c;b=x;}else if(h<240){r=0;g=x;b=c;}else if(h<300){r=x;g=0;b=c;}else{r=c;g=0;b=x;}var q=function(v){return Math.round((v+m)*255).toString(16).padStart(2,"0");};return "#"+q(r)+q(g)+q(b);}window.__brandFrom=function(hex){var a=toHsl(hex);if(!a)return null;var H=a[0],S=a[1],L=a[2];var aL=Math.max(38,Math.min(72,L));var dS=(S<=4)?S:Math.min(100,S+6);return {brand:toHex(H,S,aL),deep:toHex(H,dS,Math.max(22,Math.min(45,aL*0.67))),line:toHex(H,Math.min(25,S),23),fill:toHex(H,Math.min(22,S),12)};};function rgbTriplet(h){if(!/^#[0-9a-fA-F]{6}$/.test(String(h||"")))return null;return parseInt(h.slice(1,3),16)+","+parseInt(h.slice(3,5),16)+","+parseInt(h.slice(5,7),16);}window.__applyBrand=function(b){var r=document.documentElement,v=b||D;try{r.style.setProperty("--brand",v.brand||D.brand);r.style.setProperty("--brand-deep",v.deep||D.deep);r.style.setProperty("--brand-line",v.line||D.line);r.style.setProperty("--brand-fill",v.fill||D.fill);r.style.setProperty("--brand-rgb",rgbTriplet(v.brand||D.brand)||"47,174,78");r.style.setProperty("--brand-deep-rgb",rgbTriplet(v.deep||D.deep)||"28,122,54");}catch(e){}};try{var s=JSON.parse(localStorage.getItem("rustlers_v2")||"null");window.__applyBrand(s&&s.identity&&s.identity.brand);}catch(e){}})();</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__isVT=function(k){return /^volleyballT[0-9]*$/.test(String(k||''));};window.__vtIdx=function(k){return k==='volleyballT'?1:(parseInt(String(k).slice(11),10)||0);};window.__vtLetter=function(k){var n=window.__vtIdx(k);return (n>0&&n<=26)?String.fromCharCode(64+n):String(n);};window.__vtKeys=function(se){return Object.keys(se||{}).filter(window.__isVT).sort(function(a,b){return window.__vtIdx(a)-window.__vtIdx(b);});};window.__APP_BUILD=parseInt("209",10)||0;window.__APP_VERSION=(function(v){return /^[0-9]+\.[0-9]+\.[0-9]+$/.test(v)?v:'';})("2.18.0");</script><script>(function(){var MAX=192;window.__logoFrom=function(file,cb){try{if(!file||String(file.type||"").indexOf("image/")!==0){cb(null,"That file is not an image.");return;}var fr=new FileReader();fr.onerror=function(){cb(null,"That file could not be read.");};fr.onload=function(){var img=new Image();img.onerror=function(){cb(null,"That file could not be read as an image.");};img.onload=function(){try{var w=img.naturalWidth||img.width||MAX,h=img.naturalHeight||img.height||MAX;var sc=Math.min(1,MAX/Math.max(w,h));var cw=Math.max(1,Math.round(w*sc)),ch=Math.max(1,Math.round(h*sc));var c=document.createElement("canvas");c.width=cw;c.height=ch;var x=c.getContext("2d");if(!x){cb(null,"This device cannot resize images.");return;}x.drawImage(img,0,0,cw,ch);cb(c.toDataURL("image/png"),null);}catch(e){cb(null,"That image could not be resized.");}};img.src=fr.result;};fr.readAsDataURL(file);}catch(e){cb(null,"That file could not be read.");}};})();</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:var(--brand-deep);color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:var(--brand-deep);border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var _w0=window.innerWidth||document.documentElement.clientWidth;var MIN=parseInt(localStorage.getItem(_w0>=1000?"rustlers_zoom_wide":"rustlers_zoom_min"),10);var usr=!!MIN&&MIN>=400&&MIN<=3200;if(!usr)MIN=(_w0<700?600:_w0<1000?900:1180);var w=_w0;var z=usr?(Math.abs(w-MIN)<2?0:w/MIN):(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
+<script>(function(){var D={brand:"#2fae4e",deep:"#1c7a36",line:"#2c4a36",fill:"#17241b"};function toHsl(h){h=String(h||"").trim();if(!/^#[0-9a-fA-F]{6}$/.test(h))return null;var r=parseInt(h.slice(1,3),16)/255,g=parseInt(h.slice(3,5),16)/255,b=parseInt(h.slice(5,7),16)/255;var mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=(mx+mn)/2,s=0,H=0;if(mx!==mn){var d=mx-mn;s=l>0.5?d/(2-mx-mn):d/(mx+mn);H=mx===r?((g-b)/d+(g<b?6:0)):mx===g?((b-r)/d+2):((r-g)/d+4);H*=60;}return [H,s*100,l*100];}function toHex(h,s,l){h=((h%360)+360)%360;s=Math.max(0,Math.min(100,s))/100;l=Math.max(0,Math.min(100,l))/100;var c=(1-Math.abs(2*l-1))*s,x=c*(1-Math.abs((h/60)%2-1)),m=l-c/2,r,g,b;if(h<60){r=c;g=x;b=0;}else if(h<120){r=x;g=c;b=0;}else if(h<180){r=0;g=c;b=x;}else if(h<240){r=0;g=x;b=c;}else if(h<300){r=x;g=0;b=c;}else{r=c;g=0;b=x;}var q=function(v){return Math.round((v+m)*255).toString(16).padStart(2,"0");};return "#"+q(r)+q(g)+q(b);}window.__brandFrom=function(hex){var a=toHsl(hex);if(!a)return null;var H=a[0],S=a[1],L=a[2];var aL=Math.max(38,Math.min(72,L));var dS=(S<=4)?S:Math.min(100,S+6);return {brand:toHex(H,S,aL),deep:toHex(H,dS,Math.max(22,Math.min(45,aL*0.67))),line:toHex(H,Math.min(25,S),23),fill:toHex(H,Math.min(22,S),12)};};function rgbTriplet(h){if(!/^#[0-9a-fA-F]{6}$/.test(String(h||"")))return null;return parseInt(h.slice(1,3),16)+","+parseInt(h.slice(3,5),16)+","+parseInt(h.slice(5,7),16);}window.__applyBrand=function(b){var r=document.documentElement,v=b||D;try{r.style.setProperty("--brand",v.brand||D.brand);r.style.setProperty("--brand-deep",v.deep||D.deep);r.style.setProperty("--brand-line",v.line||D.line);r.style.setProperty("--brand-fill",v.fill||D.fill);r.style.setProperty("--brand-rgb",rgbTriplet(v.brand||D.brand)||"47,174,78");r.style.setProperty("--brand-deep-rgb",rgbTriplet(v.deep||D.deep)||"28,122,54");}catch(e){}};try{var s=JSON.parse(localStorage.getItem("rustlers_v2")||"null");window.__applyBrand(s&&s.identity&&s.identity.brand);}catch(e){}})();</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>#__bundler_err{display:none!important;}</style><script>window.__isVT=function(k){return /^volleyballT[0-9]*$/.test(String(k||''));};window.__vtIdx=function(k){return k==='volleyballT'?1:(parseInt(String(k).slice(11),10)||0);};window.__vtLetter=function(k){var n=window.__vtIdx(k);return (n>0&&n<=26)?String.fromCharCode(64+n):String(n);};window.__vtKeys=function(se){return Object.keys(se||{}).filter(window.__isVT).sort(function(a,b){return window.__vtIdx(a)-window.__vtIdx(b);});};window.__APP_BUILD=parseInt("210",10)||0;window.__APP_VERSION=(function(v){return /^[0-9]+\.[0-9]+\.[0-9]+$/.test(v)?v:'';})("2.21.0");</script><script>(function(){var MAX=192;window.__logoFrom=function(file,cb){try{if(!file||String(file.type||"").indexOf("image/")!==0){cb(null,"That file is not an image.");return;}var fr=new FileReader();fr.onerror=function(){cb(null,"That file could not be read.");};fr.onload=function(){var img=new Image();img.onerror=function(){cb(null,"That file could not be read as an image.");};img.onload=function(){try{var w=img.naturalWidth||img.width||MAX,h=img.naturalHeight||img.height||MAX;var sc=Math.min(1,MAX/Math.max(w,h));var cw=Math.max(1,Math.round(w*sc)),ch=Math.max(1,Math.round(h*sc));var c=document.createElement("canvas");c.width=cw;c.height=ch;var x=c.getContext("2d");if(!x){cb(null,"This device cannot resize images.");return;}x.drawImage(img,0,0,cw,ch);cb(c.toDataURL("image/png"),null);}catch(e){cb(null,"That image could not be resized.");}};img.src=fr.result;};fr.readAsDataURL(file);}catch(e){cb(null,"That file could not be read.");}};})();</script><script>(function(){document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.keyCode!==13)return;var el=e.target; if(!el||el.tagName!=="INPUT")return;var node=el;for(var i=0;i<6&&node&&node.parentElement;i++){node=node.parentElement;var gos=node.querySelectorAll("[data-go]");for(var j=0;j<gos.length;j++){var g=gos[j];if(el.compareDocumentPosition(g)&Node.DOCUMENT_POSITION_FOLLOWING){e.preventDefault();try{el.blur();}catch(x){}g.click();return;}}}});})();</script><script>(function(){var FEED="https://raw.githubusercontent.com/bertsch97/rustlers-releases/main/version.json";var LAST=0,DISM=0;function banner(v){if(document.getElementById("__upd_banner"))return;var b=document.createElement("div");b.id="__upd_banner";b.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:var(--brand-deep);color:#fff;font:600 14px/1.3 -apple-system,Segoe UI,Roboto,sans-serif;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.35)";var t=document.createElement("div");t.style.flex="1";t.textContent="Update available ("+(v.apkVersion||"new")+")";var u=document.createElement("button");u.textContent="UPDATE";u.style.cssText="background:#fff;color:var(--brand-deep);border:0;border-radius:8px;padding:8px 14px;font-weight:800;letter-spacing:.5px;cursor:pointer";u.onclick=function(){try{window.open(v.apkUrl,"_blank");}catch(e){location.href=v.apkUrl;}};var x=document.createElement("div");x.textContent="\u2715";x.style.cssText="opacity:.85;padding:4px 8px;cursor:pointer";x.onclick=function(){DISM=v.apkBuild||0;if(b.parentNode)b.parentNode.removeChild(b);};b.appendChild(t);b.appendChild(u);b.appendChild(x);document.body.appendChild(b);}function check(force){var now=Date.now();if(!force&&now-LAST<60000)return;LAST=now;try{fetch(FEED+"?t="+now,{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(v){if(v&&typeof v.apkBuild==="number"&&v.apkBuild>(window.__APP_BUILD||0)&&v.apkBuild>DISM&&v.apkUrl)banner(v);}).catch(function(){});}catch(e){}}function native(){return !!(window.Capacitor);}function arm(){if(!native())return;setTimeout(function(){check(true);},2500);setInterval(function(){check(false);},180000);document.addEventListener("visibilitychange",function(){if(!document.hidden)check(false);});}if(document.readyState==="loading")window.addEventListener("DOMContentLoaded",arm);else arm();})();</script><script>(function(){function ensureStyle(){if(document.getElementById("__fitvh_style"))return;var st=document.createElement("style");st.id="__fitvh_style";st.textContent='[style*="height: 100vh"]{height:var(--fitvh,100vh)!important;min-height:var(--fitvh,100vh)!important;}';(document.head||document.documentElement).appendChild(st);}function fit(){ensureStyle();var root=document.getElementById("dc-root");if(!root)return;var _w0=window.innerWidth||document.documentElement.clientWidth;var MIN=parseInt(localStorage.getItem(_w0>=1000?"rustlers_zoom_wide":"rustlers_zoom_min"),10);var usr=!!MIN&&MIN>=400&&MIN<=3200;if(!usr)MIN=(_w0<700?600:_w0<1000?900:1180);var w=_w0;var z=usr?(Math.abs(w-MIN)<2?0:w/MIN):(w<MIN?(w/MIN):0);var wantW=z?MIN+"px":"";var wantZ=z?String(z):"";if(root.style.width!==wantW)root.style.width=wantW;if(String(root.style.zoom)!==wantZ)root.style.zoom=wantZ;var fv=z?((100/z).toFixed(3)+"vh"):"100vh";if(document.documentElement.style.getPropertyValue("--fitvh")!==fv)document.documentElement.style.setProperty("--fitvh",fv);}window.addEventListener("resize",fit);window.addEventListener("orientationchange",function(){setTimeout(fit,60);setTimeout(fit,350);});setInterval(fit,300);})();</script><script>(function(){var KEY='rustlers_v2';
 function E(t,c,x){var e=document.createElement(t);if(c)e.style.cssText=c;if(x!=null)e.textContent=x;return e;}
 function panel(){if(document.getElementById('__bk_ov'))return;
 var ov=E('div','position:fixed;inset:0;z-index:2147483646;background:rgba(6,9,7,.92);display:flex;align-items:center;justify-content:center;padding:20px;');ov.id='__bk_ov';
@@ -340,7 +340,7 @@ function mark(){
 // VOICE / zoom / BACKUP / version / SYNC used to be five fixed boxes stacked up the right edge, sitting on
 // top of buttons and, on a tablet, on the CLEAR button of the selected-player bar. They now live in one
 // small handle; its dot is the sync status, and the rest open on a tap.
-var SECOND=['__voice_toggle','__zoom_ctl','__bk_btn','__cal_btn','__cal_now','__clear_btn','__restart_btn','__season_btn','__ssync_btn','__bio_btn','__prep_btn','__ver_lbl'];
+var SECOND=['__voice_toggle','__zoom_ctl','__bk_btn','__cal_btn','__cal_now','__clear_btn','__restart_btn','__season_btn','__ssync_btn','__bio_btn','__prep_btn','__warm_btn','__ver_lbl'];
 function flat(el){ el.style.position='static'; el.style.right='auto'; el.style.bottom='auto'; el.style.left='auto'; el.style.top='auto'; el.style.margin='0'; el.style.zIndex='auto'; }
 function dock(){
   var d=document.getElementById('__dock'), more, row, hd, dot;
@@ -2261,6 +2261,12 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
     if (opp && norm.indexOf(' ' + opp + ' ') !== -1) return 'away';
     var homeNick = NS.normalize(ctx.homeNick || 'rustlers');
     if (homeNick && norm.indexOf(' ' + homeNick + ' ') !== -1) return 'home';
+    // How the recognizer ACTUALLY hears our own team name ("Rustlers" -> "wrestlers", "restless"),
+    // recorded by the warm-up (voice-warmup/warmup.js) and approved by the user.
+    var learned = (NS.learnedTeam && NS.learnedTeam[ctx.baseSport]) || [];
+    for (var li = 0; li < learned.length; li++) {
+      if (learned[li] && norm.indexOf(' ' + learned[li] + ' ') !== -1) return 'home';
+    }
     return null;
   }
 
@@ -2570,6 +2576,67 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
     };
   }
 
+  /*
+   * N-best. The recognizer hands back up to five readings of one utterance, best first. The first is
+   * usually right; when it is not, the right one is often second or third ("Autumn flower" / "Autumn Flor").
+   *
+   * quality: 0 nothing parsed, 1 a stat was heard but it still needs a player, 2 at least one complete stat.
+   * An alternative is used ONLY when the first reading is not already complete AND the alternative is. That
+   * is deliberately narrow: five readings is five chances to match something, so merely "an event word
+   * appeared" in an alternative is never enough, and a first reading that already works is never replaced.
+   */
+  function qualityOf(results) {
+    if (!results || !results.length) return 0;
+    for (var i = 0; i < results.length; i++) if (!results[i].needsPlayer) return 2;
+    return 1;
+  }
+  function chooseAlternative(ctx, priorChunks, alts, primaryResults) {
+    var prior = (priorChunks || []).join(' ');
+    var join = function (t) { return (prior ? prior + ' ' : '') + t; };
+    var base = primaryResults != null ? primaryResults : parseTranscriptMulti(ctx, join(alts && alts[0] || ''));
+    if (!alts || alts.length < 2 || qualityOf(base) === 2) return { index: 0, results: base, quality: qualityOf(base) };
+    for (var i = 1; i < alts.length; i++) {
+      if (!alts[i]) continue;
+      var res = parseTranscriptMulti(ctx, join(alts[i]));
+      if (qualityOf(res) === 2) return { index: i, results: res, quality: 2 };
+    }
+    return { index: 0, results: base, quality: qualityOf(base) };
+  }
+
+  /*
+   * Words handed to the recognizer as a hint (Android 13+ EXTRA_BIASING_STRINGS): what is likely to be said
+   * tonight. Roster names (both teams), our nickname, the opponent, and the stat words for the sport. It is only a
+   * hint; a phone whose speech service ignores it behaves exactly as before.
+   */
+  var BIAS_WORDS = {
+    volleyball: ['kill', 'ace', 'dug out', 'dig', 'block', 'blocked by', 'assist', 'service error', 'attack error', 'hitting error', 'out of bounds', 'into the net', 'ball handling error', 'double contact', 'side out', 'time out'],
+    basketball: ['three pointer', 'free throw', 'layup', 'jump shot', 'rebound', 'assist', 'steal', 'block', 'turnover', 'foul', "it's good", 'no good', 'for two', 'for three'],
+    football: ['touchdown', 'completion', 'incomplete', 'rush', 'reception', 'tackle', 'sack', 'interception', 'fumble', 'punt', 'field goal', 'extra point', 'first down', 'penalty', 'kickoff']
+  };
+  function biasingStrings(ctx, limit) {
+    if (!ctx) return [];
+    var out = [], seen = {};
+    function add(s) {
+      s = String(s == null ? '' : s).replace(/\s+/g, ' ').trim();
+      if (s.length < 3 || s.length > 40) return;
+      var k = s.toLowerCase(); if (seen[k]) return; seen[k] = 1; out.push(s);
+    }
+    (BIAS_WORDS[ctx.baseSport] || []).forEach(add);
+    var nick = String(ctx.homeNick || '').trim();
+    if (nick) add(nick.charAt(0).toUpperCase() + nick.slice(1));
+    var opp = String(ctx.opp || '').trim();
+    if (opp && opp !== 'Visitor') { add(opp); var ow = opp.split(' ').filter(Boolean); if (ow.length > 1) add(ow[ow.length - 1]); }
+    (ctx.roster || []).forEach(function (r) {
+      var nm = String(r.name || '').trim(); if (!nm || nm.charAt(0) === '#') return;
+      add(nm); var p = nm.split(' ').filter(Boolean);
+      if (p.length > 1) { add(p[0]); add(p[p.length - 1]); }
+    });
+    return out.slice(0, limit || 100);
+  }
+
+  NS.engine.chooseAlternative = chooseAlternative;
+  NS.engine.qualityOf = qualityOf;
+  NS.engine.biasingStrings = biasingStrings;
   NS.engine.buildContext = buildContext;
   NS.engine.expectedSideFor = expectedSideFor;
   NS.engine.matchTeamSide = matchTeamSide;
@@ -2627,6 +2694,12 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
   var ERROR_BACKOFF_MS = 2000; // pause after a failed window
   var MAX_CONSECUTIVE_ERRORS = 6; // give up for the session past this
 
+  // feature switches live in rustlers_flags like every other module's; on unless set to false
+  function flag(name) {
+    try { var f = JSON.parse(root.localStorage.getItem('rustlers_flags') || '{}'); return f[name] !== false; }
+    catch (e) { return true; }
+  }
+
   function getPlugin() {
     try {
       return root.Capacitor && root.Capacitor.Plugins && root.Capacitor.Plugins.SpeechRecognition;
@@ -2638,6 +2711,8 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
     opts = opts || {};
     var onTranscript = typeof opts.onTranscript === 'function' ? opts.onTranscript : function () {};
     var onStatus = typeof opts.onStatus === 'function' ? opts.onStatus : function () {};
+    // () -> [strings] the recognizer should expect to hear (roster, stat words). Optional, hint only.
+    var getBiasing = typeof opts.getBiasing === 'function' ? opts.getBiasing : null;
 
     var running = false;
     var consecutiveErrors = 0;
@@ -2662,20 +2737,22 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
 
       Promise.resolve()
         .then(function () {
-          return plugin.start({
-            language: 'en-US',
-            maxResults: 1,
-            partialResults: false,
-            popup: false
-          });
+          // up to five readings (the engine picks the first complete one) and a hint list; either can be
+          // switched off in rustlers_flags ({"nbest":false} / {"biasing":false}) without touching the app
+          var params = { language: 'en-US', maxResults: flag('nbest') ? 5 : 1, partialResults: false, popup: false };
+          if (getBiasing && flag('biasing')) {
+            try { var bias = getBiasing(); if (bias && bias.length) params.biasing = bias; } catch (e) {}
+          }
+          return plugin.start(params);
         })
         .then(function (res) {
           settled = true;
           clearTimeout(forceStopTimer);
           consecutiveErrors = 0;
-          var text = res && res.matches && res.matches[0];
+          var all = (res && res.matches) || [];
+          var text = all[0];
           if (text && running) {
-            try { onTranscript(text); } catch (e) {}
+            try { onTranscript(text, all.slice(0, 5)); } catch (e) {}
           }
         })
         .catch(function () {
@@ -2918,7 +2995,10 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
     // Named rather than inline so it can be driven directly. The native
     // speech plugin does not exist in a browser, so this path is otherwise
     // unreachable there -- and therefore unverifiable except in a live gym.
-    function handleTranscript(text) {
+    function flagOn2(name) {
+      try { var f = JSON.parse(localStorage.getItem('rustlers_flags') || '{}'); return f[name] !== false; } catch (e) { return true; }
+    }
+    function handleTranscript(text, alts) {
           try {
             debugState.transcript = text;
             ensureDebugLine();
@@ -2935,6 +3015,17 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
               // offered as each card is answered, since the app holds one
               // suggestion at a time.
               var results = NS.engine.parseTranscriptMulti(ctx, combined);
+              // the recognizer's other readings of this same utterance: used only when the first one did not
+              // yield a complete stat and another one does (see engine.chooseAlternative)
+              if (alts && alts.length > 1 && flagOn2('nbest')) {
+                var pk = NS.engine.chooseAlternative(ctx, transcriptBuffer.slice(0, -1), alts, results);
+                if (pk && pk.index > 0) {
+                  transcriptBuffer[transcriptBuffer.length - 1] = alts[pk.index];
+                  combined = transcriptBuffer.join(' ');
+                  results = pk.results;
+                  debugState.alt = pk.index;
+                }
+              }
               if (results.length) {
                 transcriptBuffer.length = 0; // consumed — don't re-match the same words into the next suggestion
                 suggestion = buildSuggestion(ctx, results[0], combined);
@@ -2979,6 +3070,7 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
       if (recognizer) return recognizer;
       recognizer = NS.recognizer.create({
         onTranscript: handleTranscript,
+        getBiasing: function () { return NS.engine.biasingStrings(NS.engine.buildContext(readState())); },
         onStatus: function (s) {
           try { debugState.status = s; ensureDebugLine(); } catch (e) {}
         }
@@ -2996,6 +3088,7 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
     function tick() {
       try {
         if (!flagOn()) { teardown(); return; }
+        if (window.__voiceHold) { teardown(); return; }   // the warm-up is using the microphone
         ensureDebugLine();
         var state = readState();
 
@@ -6865,7 +6958,378 @@ window.__openNewGamePrompt=function(){if(document.getElementById('__ng_ov'))retu
   var iv = setInterval(function () { if (document.body) { button(); clearInterval(iv); } }, 300);
 })(typeof window !== 'undefined' ? window : globalThis);
 
-/*/mod:prep*/</script><script>(function(){function foldPlays(plays) {
+/*/mod:prep*/</script><script>/*mod:warmup*/
+/*
+ * voice-warmup/warmup.js -- teach the app how THIS microphone hears the stat calls.
+ *
+ * The voice matcher knows what a kill, an ace or a dig sounds like when the recognizer gets it right. It
+ * does not know the ways this tablet, this mic and this announcer get it wrong, and every broadcast shows
+ * some: "dug out" heard as "dung out" / "done out" / "duck out", "an ace" as "an eight", "kill" as "kiln",
+ * "Rustlers" as "wrestlers". Player names already have a calibration (it records what the recognizer made
+ * of each name). This is the same idea for everything else, one sport at a time:
+ *
+ *   1. it shows a stat call, you say it, and it records what the recognizer returned;
+ *   2. it checks each reading against the existing table: already understood (nothing to do), understood as
+ *      something ELSE (a conflict, never applied by default), or not understood (a candidate);
+ *   3. you see the list, tick what to keep, and APPLY. Nothing is learned before that.
+ *
+ * What is learned is extra phrases for the same entries (volleyball and football: the entry's own list;
+ * basketball: the make / miss / shot-type / team-stat lists), plus alternative spellings of our own team
+ * name, used for team-level calls. They live in rustlers_warmup and are merged into the tables at load, so
+ * the matcher itself is unchanged. RESET removes every one of them again.
+ *
+ * Single-word candidates are unticked by default: a common word is a worse bet than a phrase, and a wrong
+ * stat is worse than a missed one.
+ *
+ * While it listens it sets window.__voiceHold, which keeps the live voice loop off the microphone.
+ * Remove the whole module with `node scripts/mod.js warmup --remove`.
+ */
+(function (root) {
+  var STORE = 'rustlers_warmup';
+  var FLAGS = 'rustlers_flags';
+  var FLAG = 'warmup';
+  var KEY = 'rustlers_v2';
+  var LISTEN_MS = 9000;
+
+  function readJSON(k, d) { try { var v = root.localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }
+  function writeJSON(k, v) { try { root.localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } }
+  function flagOn() { return readJSON(FLAGS, {})[FLAG] !== false; }
+  function setFlag(on) { var f = readJSON(FLAGS, {}); f[FLAG] = !!on; writeJSON(FLAGS, f); }
+  function VS() { return root.RustlersVoice; }
+
+  // ---- what to say, per sport --------------------------------------------------------------------------
+  // expect: which entry of the keyword table this call must land on.
+  //   {t:'entry', k}  volleyball / football entries by key        {t:'make'} {t:'miss'}  basketball outcome lists
+  //   {t:'shot', k}   basketball shot type by stat (1 ft, 2, 3)   {t:'tstat', k}         basketball team stat by statKey
+  var E = function (k) { return { t: 'entry', k: k }; };
+  var SCRIPTS = {
+    volleyball: [
+      ['Kill', E('kill')], ['Another kill', E('kill')], ['Ace', E('ace')], ['Service ace', E('ace')],
+      ['Dug out', E('dig')], ['Great dig', E('dig')], ['Solo block', E('bs')], ['Blocked by', E('bs')],
+      ['Assist', E('asst')], ['Spike', E('att')], ['Attack error', E('aerr')], ['Out of bounds', E('aerr')],
+      ['Into the net', E('aerr')], ['Service error', E('serr')], ['Reception error', E('rerr')], ['Ball handling error', E('bhe')]
+    ],
+    basketball: [
+      ["It's good", { t: 'make' }], ['Swish', { t: 'make' }], ['No good', { t: 'miss' }], ['Air ball', { t: 'miss' }],
+      ['Three pointer', { t: 'shot', k: 3 }], ['Free throw', { t: 'shot', k: 1 }], ['Layup', { t: 'shot', k: 2 }], ['Jump shot', { t: 'shot', k: 2 }],
+      ['Rebound', { t: 'tstat', k: 'reb' }], ['Assist', { t: 'tstat', k: 'ast' }], ['Steal', { t: 'tstat', k: 'stl' }],
+      ['Block', { t: 'tstat', k: 'blk' }], ['Turnover', { t: 'tstat', k: 'tov' }], ['Foul', { t: 'tstat', k: 'foul' }]
+    ],
+    football: [
+      ['Touchdown pass', E('ptd')], ['Touchdown catch', E('rectd')], ['Touchdown run', E('rtd')], ['Completion', E('comp')],
+      ['Handoff', E('rush')], ['Reception', E('rec')], ['Tackle', E('tkl')], ['Sack', E('sack')], ['Interception', E('dint')],
+      ['Forced fumble', E('ff')], ['Incomplete', E('inc')], ['Throws an interception', E('intt')], ['Fumble', E('fum')]
+    ]
+  };
+  function baseOf(sport) {
+    if (sport === 'basketballB') return 'basketball';
+    if (/^volleyballT[0-9]*$/.test(sport)) return 'volleyball';
+    return sport;
+  }
+  function scriptFor(base, teamNick, teamName) {
+    var items = (SCRIPTS[base] || []).map(function (r) { return { say: r[0], expect: r[1] }; });
+    if (teamNick) items.push({ say: teamNick, team: true });
+    if (teamName && teamName !== teamNick) items.push({ say: teamName, team: true });
+    return items;
+  }
+
+  // ---- the tables the matcher reads -------------------------------------------------------------------------
+  function entryFor(base, x) {
+    var K = VS() && VS().keywords; if (!K || !x) return null;
+    var list;
+    if (x.t === 'entry') list = K[base];
+    else if (x.t === 'make') return (K.basketballMake || [])[0] || null;
+    else if (x.t === 'miss') return (K.basketballMiss || [])[0] || null;
+    else if (x.t === 'shot') { list = K.basketballShotType; return (list || []).filter(function (e) { return e.stat === x.k; })[0] || null; }
+    else if (x.t === 'tstat') { list = K.basketballTeamStat; return (list || []).filter(function (e) { return e.statKey === x.k; })[0] || null; }
+    return (list || []).filter(function (e) { return e.key === x.k; })[0] || null;
+  }
+  function allEntries(base) {
+    var K = VS().keywords;
+    if (base === 'basketball') return [(K.basketballMake || [])[0], (K.basketballMiss || [])[0]].concat(K.basketballShotType || [], K.basketballTeamStat || []).filter(Boolean);
+    return K[base] || [];
+  }
+  function labelOf(entry) { return entry ? (entry.label || entry.key || entry.statKey || (entry.stat ? entry.stat + ' pt' : '')) : ''; }
+
+  // ---- learned data ---------------------------------------------------------------------------------------------
+  function load() {
+    var s = readJSON(STORE, null);
+    if (!s || typeof s !== 'object') s = {};
+    s.v = 1; if (!s.learned) s.learned = {}; if (!s.team) s.team = {}; if (!s.at) s.at = {};
+    return s;
+  }
+  function save(s) { return writeJSON(STORE, s); }
+
+  // Merge everything learned into the live tables. Idempotent: a phrase is added once.
+  function applyAll() {
+    if (!VS() || !VS().keywords) return 0;
+    var s = load(), added = 0;
+    VS().learnedTeam = {};
+    if (!flagOn()) return 0;
+    Object.keys(s.learned).forEach(function (base) {
+      (s.learned[base] || []).forEach(function (l) {
+        var e = entryFor(base, l.expect);
+        if (e && e.phrases && e.phrases.indexOf(l.phrase) < 0) { e.phrases.push(l.phrase); added++; }
+      });
+    });
+    Object.keys(s.team).forEach(function (base) { VS().learnedTeam[base] = (s.team[base] || []).slice(); });
+    return added;
+  }
+  function unapplyAll() {
+    var s = load();
+    Object.keys(s.learned).forEach(function (base) {
+      (s.learned[base] || []).forEach(function (l) {
+        var e = entryFor(base, l.expect);
+        if (e && e.phrases) { var i = e.phrases.indexOf(l.phrase); if (i >= 0) e.phrases.splice(i, 1); }
+      });
+    });
+    if (VS()) VS().learnedTeam = {};
+  }
+  function reset(base) {
+    var s = load();
+    unapplyAll();
+    if (base) { delete s.learned[base]; delete s.team[base]; delete s.at[base]; } else { s.learned = {}; s.team = {}; s.at = {}; }
+    save(s); applyAll();
+  }
+
+  // ---- judging what was heard (pure) ------------------------------------------------------------------------------
+  function words(t) { return VS().normalize(t).split(' ').filter(Boolean); }
+  function propose(base, items, heard, names) {
+    var N = VS(), out = { works: [], learn: [], conflict: [], team: [], nothing: [] };
+    var all = allEntries(base), seen = {};
+    items.forEach(function (it, i) {
+      var h = heard[i], top = h && h[0];
+      if (!top) { out.nothing.push({ item: it }); return; }
+      var norm = N.normalize(top);
+      if (it.team) {
+        var nick = N.normalize(names && names.nick || ''), full = N.normalize(names && names.name || '');
+        if ((nick && (' ' + norm + ' ').indexOf(' ' + nick + ' ') >= 0) || (full && norm === full)) { out.works.push({ item: it, heard: top }); return; }
+        var wc = norm.split(' ').length;
+        if (!norm || wc > 4 || seen['T|' + norm]) return;
+        seen['T|' + norm] = 1;
+        out.team.push({ item: it, heard: top, variant: norm, risky: false });
+        return;
+      }
+      var entry = entryFor(base, it.expect);
+      if (!entry) { out.nothing.push({ item: it }); return; }
+      if (N.allPhraseOccurrences(top, [entry]).length) { out.works.push({ item: it, heard: top, entry: entry }); return; }
+      var others = N.allPhraseOccurrences(top, all.filter(function (e) { return e !== entry; }));
+      if (others.length) { out.conflict.push({ item: it, heard: top, entry: entry, other: labelOf(others[0].entry) }); return; }
+      var w = words(top), key = JSON.stringify(it.expect) + '|' + norm;
+      if (!norm || norm.length < 4 || w.length > 6 || seen[key]) { out.nothing.push({ item: it, heard: top }); return; }
+      seen[key] = 1;
+      out.learn.push({ item: it, heard: top, phrase: norm, entry: entry, expect: it.expect, risky: w.length === 1 });
+    });
+    return out;
+  }
+  function commit(base, proposal, picks) {
+    // picks: { 'L<i>': bool, 'T<i>': bool } by index into proposal.learn / proposal.team
+    var s = load(); s.learned[base] = s.learned[base] || []; s.team[base] = s.team[base] || [];
+    var n = 0;
+    proposal.learn.forEach(function (c, i) {
+      if (!picks['L' + i]) return;
+      var dup = s.learned[base].some(function (l) { return l.phrase === c.phrase && JSON.stringify(l.expect) === JSON.stringify(c.expect); });
+      if (!dup) { s.learned[base].push({ expect: c.expect, phrase: c.phrase, from: c.item.say, at: Date.now() }); n++; }
+    });
+    proposal.team.forEach(function (c, i) {
+      if (!picks['T' + i]) return;
+      if (s.team[base].indexOf(c.variant) < 0) { s.team[base].push(c.variant); n++; }
+    });
+    s.at[base] = Date.now();
+    save(s); applyAll();
+    return n;
+  }
+
+  // ---- listening ---------------------------------------------------------------------------------------------------------
+  function plugin() { try { return root.Capacitor && root.Capacitor.Plugins && root.Capacitor.Plugins.SpeechRecognition; } catch (e) { return null; } }
+  // -> Promise<[readings]>; rejects with a short reason
+  function listen(bias) {
+    return new Promise(function (resolve, reject) {
+      var p = plugin();
+      if (!p || !p.start) { reject('unavailable'); return; }
+      var done = false;
+      var timer = setTimeout(function () { if (done) return; done = true; try { p.stop && p.stop(); } catch (e) {} reject('nothing heard'); }, LISTEN_MS);
+      var params = { language: 'en-US', maxResults: 5, partialResults: false, popup: false };
+      if (bias && bias.length) params.biasing = bias;
+      Promise.resolve().then(function () { return p.start(params); }).then(function (res) {
+        if (done) return; done = true; clearTimeout(timer);
+        var m = (res && res.matches) || [];
+        if (m.length) resolve(m.slice(0, 5)); else reject('nothing heard');
+      }, function (e) { if (done) return; done = true; clearTimeout(timer); reject(String((e && e.message) || e || 'nothing heard')); });
+    });
+  }
+
+  // ---- panel -----------------------------------------------------------------------------------------------------------------
+  function E_(t, c, x) { var e = document.createElement(t); if (c) e.style.cssText = c; if (x != null) e.textContent = x; return e; }
+  var CHIP = 'padding:9px 13px;border-radius:9px;border:1px solid var(--brand-line,#2c4a36);background:#131b15;color:#cdd6cf;font-weight:800;font-size:13px;letter-spacing:1px;cursor:pointer;';
+  var CHIP_ON = CHIP.replace('background:#131b15', 'background:var(--brand-deep,#1c7a36)').replace('color:#cdd6cf', 'color:#fff');
+  var ui = { screen: 'intro', base: null, items: [], i: 0, heard: [], status: '', adv: null, proposal: null, picks: {}, names: {}, run: 0 };
+  var ADV_MS = 1400;
+
+  function appState() { return readJSON(KEY, null); }
+  function sportsAvailable() {
+    var st = appState(), out = [];
+    ['volleyball', 'basketball', 'football'].forEach(function (b) { if (SCRIPTS[b]) out.push(b); });
+    return out;
+  }
+  function names(base) {
+    var out = { nick: '', name: '' };
+    try { var c = root.__appComp; var sport = base === 'basketball' ? ((appState() || {}).sport === 'basketballB' ? 'basketballB' : 'basketball') : base;
+      out.name = c.teamNameFor(sport) || ''; out.nick = (c.teamNickTitle && c.teamNickTitle()) || ''; } catch (e) {}
+    return out;
+  }
+  function biasFor(base) {
+    var out = ['kill', 'ace', 'dug out', 'block', 'assist', 'service error'];
+    (SCRIPTS[base] || []).forEach(function (r) { if (out.indexOf(r[0]) < 0) out.push(r[0]); });
+    var n = names(base); [n.nick, n.name].forEach(function (x) { if (x && out.indexOf(x) < 0) out.push(x); });
+    return out.slice(0, 100);
+  }
+
+  function close() {
+    var o = document.getElementById('__warm_ov'); if (o) o.remove();
+    if (ui.adv) { clearTimeout(ui.adv); ui.adv = null; }
+    ui.run++; root.__voiceHold = false;
+  }
+  function open() {
+    close();
+    ui.screen = 'intro'; ui.base = null; ui.proposal = null;
+    var ov = E_('div', 'position:fixed;inset:0;z-index:2147483646;background:rgba(6,9,7,.94);display:flex;align-items:flex-start;justify-content:center;padding:14px;overflow:auto;');
+    ov.id = '__warm_ov';
+    document.body.appendChild(ov);
+    draw();
+  }
+  function draw() {
+    var ov = document.getElementById('__warm_ov'); if (!ov) return;
+    while (ov.firstChild) ov.removeChild(ov.firstChild);
+    var box = E_('div', 'background:#131b15;border:1px solid #26332b;border-radius:14px;max-width:720px;width:100%;padding:18px;color:#eef2ef;font-family:-apple-system,Segoe UI,Roboto,sans-serif;box-sizing:border-box;');
+    ov.appendChild(box);
+    var head = E_('div', 'display:flex;align-items:center;gap:10px;');
+    head.appendChild(E_('div', 'font-weight:800;font-size:17px;letter-spacing:1px;flex:1;', 'VOICE WARM-UP'));
+    var on = flagOn();
+    var sw = E_('div', on ? CHIP_ON : CHIP, on ? 'ON' : 'OFF'); sw.id = '__warm_flag';
+    sw.onclick = function () { setFlag(!flagOn()); unapplyAll(); applyAll(); draw(); };
+    var x = E_('div', CHIP, 'CLOSE'); x.id = '__warm_close'; x.onclick = close;
+    head.appendChild(sw); head.appendChild(x); box.appendChild(head);
+    if (!on) { box.appendChild(E_('div', 'font-size:13px;color:#8b9890;margin:12px 0;', 'Off: nothing learned here is used. What was learned is kept.')); return; }
+    if (ui.screen === 'intro') intro(box); else if (ui.screen === 'say') say(box); else review(box);
+  }
+
+  function intro(box) {
+    var s = load();
+    box.appendChild(E_('div', 'font-size:13px;color:#8b9890;line-height:1.5;margin:10px 0 14px;',
+      'Do this in warm-ups, on the real microphone, at the volume you will call at. You will be shown a stat call; say it. The app records how the recognizer heard it and then shows you what it would learn. Nothing is learned until you tap APPLY. Player names use the voice calibration you already have.'));
+    sportsAvailable().forEach(function (b) {
+      var row = E_('div', 'display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #26332b;flex-wrap:wrap;');
+      var n = names(b), count = scriptFor(b, n.nick, n.name).length;
+      var learned = (s.learned[b] || []).length + (s.team[b] || []).length;
+      var info = E_('div', 'flex:1;min-width:180px;');
+      info.appendChild(E_('div', 'font-weight:800;', (b === 'volleyball' ? 'VOLLEYBALL' : b === 'basketball' ? 'BASKETBALL' : 'FOOTBALL')));
+      info.appendChild(E_('div', 'font-size:12px;color:#8b9890;', count + ' calls' + (s.at[b] ? ' · last warmed up ' + new Date(s.at[b]).toLocaleDateString() : ' · not done yet') + (learned ? ' · ' + learned + ' learned' : '')));
+      row.appendChild(info);
+      var go = E_('div', CHIP_ON, 'START'); go.setAttribute('data-start', b); go.onclick = function () { begin(b); };
+      row.appendChild(go);
+      if (learned) { var rs = E_('div', CHIP, 'RESET'); rs.setAttribute('data-reset', b); rs.onclick = function () { reset(b); draw(); }; row.appendChild(rs); }
+      box.appendChild(row);
+    });
+    box.appendChild(E_('div', 'font-size:11px;color:#8b9890;margin-top:10px;line-height:1.45;', 'Needs the installed app on the phone or tablet: the speech engine is not in a web browser.'));
+  }
+
+  function begin(base) {
+    var n = names(base);
+    ui.base = base; ui.names = n; ui.items = scriptFor(base, n.nick, n.name); ui.i = 0; ui.heard = []; ui.status = ''; ui.screen = 'say'; ui.run++;
+    root.__voiceHold = true;
+    draw(); listenNow();
+  }
+  function listenNow() {
+    var run = ui.run, i = ui.i;
+    ui.status = 'listening'; draw();
+    listen(biasFor(ui.base)).then(function (m) {
+      if (run !== ui.run) return; ui.heard[i] = m; ui.status = 'heard'; draw(); advLater(run);
+    }, function (why) {
+      if (run !== ui.run) return; ui.heard[i] = null; ui.status = why === 'unavailable' ? 'unavailable' : 'none'; draw();
+      if (ui.status === 'none') advLater(run);
+    });
+  }
+  function advLater(run) { if (ui.adv) clearTimeout(ui.adv); ui.adv = setTimeout(function () { ui.adv = null; if (run === ui.run) next(); }, ADV_MS); }
+  function next() {
+    if (ui.adv) { clearTimeout(ui.adv); ui.adv = null; }
+    if (ui.i + 1 >= ui.items.length) { finish(); return; }
+    ui.i++; listenNow();
+  }
+  function finish() {
+    ui.run++; root.__voiceHold = false;
+    ui.proposal = propose(ui.base, ui.items, ui.heard, ui.names);
+    ui.picks = {};
+    ui.proposal.learn.forEach(function (c, i) { ui.picks['L' + i] = !c.risky; });
+    ui.proposal.team.forEach(function (c, i) { ui.picks['T' + i] = true; });
+    ui.screen = 'review'; draw();
+  }
+  function say(box) {
+    var it = ui.items[ui.i];
+    box.appendChild(E_('div', 'font-size:12px;color:#8b9890;margin:12px 0 2px;letter-spacing:1px;', (ui.base || '').toUpperCase() + ' · ' + (ui.i + 1) + ' OF ' + ui.items.length));
+    var bar = E_('div', 'height:6px;background:#0d1611;border-radius:3px;margin-bottom:14px;');
+    bar.appendChild(E_('div', 'height:6px;border-radius:3px;background:var(--brand,#2fae4e);width:' + Math.round((ui.i / ui.items.length) * 100) + '%;'));
+    box.appendChild(bar);
+    box.appendChild(E_('div', 'font-size:12px;color:#8b9890;', it.team ? 'SAY YOUR TEAM NAME' : 'SAY'));
+    var big = E_('div', 'font-size:40px;font-weight:800;margin:6px 0 12px;line-height:1.1;', it.say); big.id = '__warm_say'; box.appendChild(big);
+    var h = ui.heard[ui.i], st = E_('div', 'font-size:14px;min-height:60px;line-height:1.5;');
+    st.id = '__warm_status';
+    if (ui.status === 'listening') { st.style.color = '#2fae4e'; st.textContent = '● listening…'; }
+    else if (ui.status === 'unavailable') { st.style.color = '#e0a7a2'; st.textContent = 'The speech engine is not available here. Open this on the installed app.'; }
+    else if (ui.status === 'none') { st.style.color = '#e0b24d'; st.textContent = 'Nothing heard. REDO, or it moves on.'; }
+    else if (h) { st.style.color = '#cdd6cf'; st.textContent = 'heard: ' + h.map(function (t) { return '“' + t + '”'; }).join('  ·  '); }
+    box.appendChild(st);
+    var row = E_('div', 'display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;');
+    [['REDO', function () { ui.run++; if (ui.adv) { clearTimeout(ui.adv); ui.adv = null; } listenNow(); }, '__warm_redo'], ['SKIP', function () { ui.run++; ui.heard[ui.i] = null; next(); }, '__warm_skip'], ['NEXT', function () { ui.run++; next(); }, '__warm_next'], ['STOP', function () { ui.run++; root.__voiceHold = false; ui.screen = 'intro'; draw(); }, '__warm_stop']].forEach(function (b) {
+      var c = E_('div', CHIP, b[0]); c.id = b[2]; c.onclick = b[1]; row.appendChild(c);
+    });
+    box.appendChild(row);
+  }
+
+  function review(box) {
+    var p = ui.proposal;
+    box.appendChild(E_('div', 'font-size:13px;color:#cdd6cf;margin:12px 0 4px;font-weight:700;',
+      p.works.length + ' already understood · ' + p.learn.length + ' to learn · ' + p.team.length + ' team name · ' + p.conflict.length + ' conflict · ' + p.nothing.length + ' not heard'));
+    box.appendChild(E_('div', 'font-size:12px;color:#8b9890;margin-bottom:8px;', 'PREVIEW — nothing is learned until APPLY. Single words are unticked: a common word is a worse bet than a phrase.'));
+    function line(checked, key, text, sub, warn) {
+      var r = E_('label', 'display:flex;gap:10px;align-items:flex-start;padding:8px 4px;border-top:1px solid #26332b;cursor:pointer;');
+      if (key) { var cb = E_('input'); cb.type = 'checkbox'; cb.checked = !!checked; cb.setAttribute('data-pick', key); cb.onchange = function () { ui.picks[key] = cb.checked; }; r.appendChild(cb); }
+      else r.appendChild(E_('span', 'width:13px;'));
+      var t = E_('div', 'flex:1;'); t.appendChild(E_('div', 'font-weight:700;', text)); if (sub) t.appendChild(E_('div', 'font-size:12px;color:' + (warn ? '#e0b24d' : '#8b9890') + ';', sub)); r.appendChild(t);
+      box.appendChild(r);
+    }
+    p.learn.forEach(function (c, i) { line(ui.picks['L' + i], 'L' + i, '“' + c.phrase + '” → ' + labelOf(c.entry), 'you said “' + c.item.say + '”' + (c.risky ? ' · single word' : ''), c.risky); });
+    p.team.forEach(function (c, i) { line(ui.picks['T' + i], 'T' + i, '“' + c.variant + '” → your team', 'you said “' + c.item.say + '”'); });
+    p.conflict.forEach(function (c) { line(false, null, '“' + c.heard + '”', 'heard for “' + c.item.say + '”, but already means ' + c.other + ' — not learned', true); });
+    p.works.forEach(function (c) { line(false, null, '✓ “' + c.heard + '”', 'already understood (' + c.item.say + ')'); });
+    if (p.nothing.length) line(false, null, p.nothing.length + ' call(s) not heard', p.nothing.map(function (n) { return n.item.say; }).join(', '));
+    var row = E_('div', 'display:flex;gap:8px;margin-top:12px;');
+    var ap = E_('div', CHIP_ON, 'APPLY'); ap.id = '__warm_apply';
+    ap.onclick = function () { var n = commit(ui.base, ui.proposal, ui.picks); ui.screen = 'intro'; draw(); var b = document.getElementById('__warm_ov'); if (b) { var m = E_('div', 'text-align:center;color:#2fae4e;margin-top:8px;font-weight:700;', 'Learned ' + n + '.'); m.id = '__warm_done'; b.firstChild.appendChild(m); } };
+    var again = E_('div', CHIP, 'REDO WARM-UP'); again.onclick = function () { begin(ui.base); };
+    var cn = E_('div', CHIP, 'CANCEL'); cn.id = '__warm_cancel'; cn.onclick = function () { ui.screen = 'intro'; draw(); };
+    row.appendChild(ap); row.appendChild(again); row.appendChild(cn); box.appendChild(row);
+  }
+
+  function button() {
+    if (document.getElementById('__warm_btn') || !document.body) return;
+    var b = E_('div', 'position:fixed;right:10px;bottom:278px;z-index:2147483645;background:rgba(var(--brand-deep-rgb,28,122,54),.82);color:#fff;font:700 13px/1 -apple-system,Segoe UI,Roboto,sans-serif;letter-spacing:1px;padding:12px 14px;border-radius:8px;cursor:pointer;', '🎤 WARM-UP');
+    b.id = '__warm_btn'; b.onclick = open; document.body.appendChild(b);
+  }
+
+  var api = {
+    version: 1, flagOn: flagOn, setFlag: setFlag, scriptFor: scriptFor, SCRIPTS: SCRIPTS, propose: propose, commit: commit,
+    load: load, applyAll: applyAll, reset: reset, open: open, close: close, entryFor: entryFor, baseOf: baseOf,
+    setAdvance: function (ms) { ADV_MS = ms; }
+  };
+  root.__warmup = api;
+  if (typeof module === 'object' && module && module.exports) module.exports = api;
+  // learned phrases are merged as soon as the keyword tables exist (they are loaded before this block)
+  applyAll();
+  var iv = setInterval(function () { if (document.body) { button(); clearInterval(iv); } }, 300);
+})(typeof window !== 'undefined' ? window : globalThis);
+
+/*/mod:warmup*/</script><script>(function(){function foldPlays(plays) {
   const home = {}, away = {};
   const add = (bucket, key, eff) => {
     if (key == null || key === '' || !eff) return;
